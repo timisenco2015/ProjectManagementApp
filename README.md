@@ -1,5 +1,7 @@
 # ProjectManagementApp
 
+This project is still in development stage. Full details will be provided soon...
+
 <img src="images/Screenshot_20190802-094958_Project%20Management%20App.jpg" >
 <img src="images/Screenshot_20190802-095045_Project%20Management%20App.jpg" >
 <img src="images/Screenshot_20190802-095245_Project%20Management%20App.jpg">
@@ -30,3 +32,11 @@
 <img src="images/Screenshot_20190802-100521_Project Management App.jpg" >
 <img src="images/Screenshot_20190802-100543_Project Management App.jpg" >
 <img src="images/Screenshot_20190802-100627_Project Management App.jpg" >
+<img src="images/Screenshot_20190802-100637_Project Management App.jpg" >
+<img src="images/Screenshot_20190802-100653_Project%20Management%20App.jpg" >
+<img src="images/Screenshot_20190802-100704_Project%20Management%20App.jpg" >
+<img src="images/Screenshot_20190802-100714_Project%20Management%20App.jpg" >
+<img src="images/Screenshot_20190802-100739_Project%20Management%20App.jpg" >
+<img src="images/Screenshot_20190802-100800_Project%20Management%20App.jpg" >
+<img src="images/Screenshot_20190802-100810_Project%20Management%20App.jpg" >
+<img src="images/Screenshot_20190802-100821_Project%20Management%20App.jpg" >
