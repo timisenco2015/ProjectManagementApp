@@ -9,3 +9,7 @@
 <img src="images/Screenshot_20190802-095334_Project Management App.jpg" >
 <img src="images/Screenshot_20190802-095411_Project Management App.jpg" >
 <img src="images/Screenshot_20190802-095419_Project Management App.jpg" >
+<img src="images/Screenshot_20190802-095447_Project Management App.jpg" >
+<img src="images/Screenshot_20190802-095517_Project Management App.jpg" >
+<img src="images/Screenshot_20190802-095532_Project Management App.jpg" >
+<img src="images/Screenshot_20190802-095549_Project Management App.jpg" >
