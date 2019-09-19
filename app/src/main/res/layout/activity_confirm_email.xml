@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#97CAEF"
+    tools:context=".ConfirmEmailActivity">
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/backArrowLogoId"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:layout_height="30dp"
+        android:src="@drawable/backarrowlogo"
+        android:layout_marginLeft="2dp"/>
+    <ImageView
+        android:layout_width="120dp"
+        android:id="@+id/forgotpasswordId"
+        android:layout_below="@+id/backArrowLogoId"
+        android:src="@drawable/emailexist"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_height="120dp" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/forgotpasswordQuestAId"
+        android:text="Email Verification?"
+        android:textSize="25sp"
+        android:textColor="@color/color15"
+        android:layout_below="@+id/forgotpasswordId"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_width="320dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/forgotpasswordQuestBId"
+        android:layout_below="@+id/forgotpasswordQuestAId"
+        android:textColor="@color/color15"
+        android:textSize = "15sp"
+        android:layout_marginTop="15dp"
+        android:text="Hey!, before we sign you up we need to ensure your email is valid. Please verify your email below."
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/forgotPasswordLLTId"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/forgotpasswordQuestBId"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/user"
+            android:layout_centerInParent="true"
+            android:layout_height="25dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:paddingBottom="10dp"
+            android:id="@+id/emailEditTxtId"
+            android:paddingLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:hint="Email Address"
+            android:textSize="14sp"
+            android:textColor="#1D7AD7"
+            android:backgroundTint="@color/color40"
+            android:textColorHint="@color/color15"
+            android:layout_height="55dp" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/color3"
+        android:textSize = "12sp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/errorDisplayTxtVWId"
+        android:layout_below="@+id/forgotPasswordLLTId"
+        android:layout_marginTop="5dp"
+        android:text="fdbfdbdfbdbd"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="180dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/color15"
+        android:layout_centerHorizontal="true"
+        android:onClick="checkIfEmailIsVerified"
+        android:layout_below="@+id/errorDisplayTxtVWId"
+        android:text="Verify Email"
+        android:layout_height="60dp" />
+
+</RelativeLayout>

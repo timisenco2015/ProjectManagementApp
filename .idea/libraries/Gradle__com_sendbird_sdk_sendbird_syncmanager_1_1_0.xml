@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.sendbird.sdk:sendbird-syncmanager-1.1.0">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/sendbird-syncmanager-1.1.0.aar/77e818070edee167054dfc7b43ecb4c2/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/sendbird-syncmanager-1.1.0.aar/77e818070edee167054dfc7b43ecb4c2/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sendbird.sdk/sendbird-syncmanager/1.1.0/4ac3372db8a0422e221c6a593acfb291bde2b656/sendbird-syncmanager-1.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

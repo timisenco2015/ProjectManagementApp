@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color15"
+    android:fitsSystemWindows="true"
+    tools:context=".HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/layout1Id"
+        android:layout_marginTop="10dp"
+
+        android:layout_height="60dp">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_alignParentLeft="true"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="@string/app_name">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <ImageView
+
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:tint="@color/color22"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/backArrowLogoId"
+                    android:src="@drawable/backarrowlogo" />
+                <android.support.v4.widget.Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/appbarTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/exo_2_bold"
+                    android:text="Home"
+                    android:textColor="@color/color22"
+                    android:textSize="32sp"
+                    />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+
+    </RelativeLayout>
+
+
+
+
+
+    <View android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:layout_below="@+id/layout1Id"
+        android:id="@+id/viewLayoutId"
+        android:background="@color/color9"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_below="@+id/viewLayoutId"
+        android:background="@color/appBarBackgrndColor"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:elevation="10dp"
+        app:tabPaddingStart="40dp"
+        app:tabPaddingEnd="40dp"
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabItem"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:icon="@drawable/project"/>
+
+
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabItem1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/appraisal"/>
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabItem2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/chat" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabItem3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/calendar"
+            />
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabItem4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/user"
+            />
+
+    </android.support.design.widget.TabLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_below="@+id/tabs"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <com.github.florent37.shapeofview.shapes.CircleView
+        android:layout_width="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:layout_marginTop="15dp"
+        android:onClick="userAllNotifcationsActivityView"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_height="80dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/color15"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/notificationlogo"
+                android:id="@+id/notiTxtVWLogoId"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/notificationTextVWId"
+                android:textSize="20sp"
+                android:textColor="@color/color28"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="3dp"
+                android:id="@+id/notificationTextVWId"
+                android:textSize="16sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/color28"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </com.github.florent37.shapeofview.shapes.CircleView>
+
+
+</RelativeLayout>

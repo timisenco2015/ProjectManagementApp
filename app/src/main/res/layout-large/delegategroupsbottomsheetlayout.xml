@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#f4f4f2"
+    app:behavior_peekHeight="80dp"
+    app:behavior_hideable="false"
+    android:id="@+id/bottom_sheet"
+   app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+    android:layout_height="450dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#f4f4f2"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#45A29E"
+            android:clickable="true"
+            android:id="@+id/close_open_bottomSheetId"
+            android:layout_height="80dp">
+            <TextView
+                android:id="@+id/editBackgrndImageTxtVWId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+              android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Delegate"
+                android:textColor="@color/color15"
+
+                android:textSize="26sp" />
+        </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#f4f4f2"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:id="@+id/friends_groups_RadioGrpId"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/friendsRadioBtnId"
+                android:text="Friends"
+                android:textSize="22sp"
+                android:scaleY=".9"
+                android:scaleX=".9"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:text="Groups"
+                android:scaleY=".9"
+                android:scaleX=".9"
+                android:textSize="22sp"
+                android:id="@+id/groupsRadioBtnId"
+                android:layout_marginLeft="30dp"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:id="@+id/getSelectedMemebersBtnId"
+            android:elevation="60dp"
+            android:layout_marginRight="20dp"
+            android:clickable="true"
+            android:onClick="getSelectedMembersBtn"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:text="Done"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_black"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textColor="#1F2833"
+            android:background="#664d5f79"/>
+        </RelativeLayout>
+        <SearchView
+            android:layout_width="550dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/friendGroupSearchVWId"
+            android:iconifiedByDefault="false"
+            android:focusable="false"
+            android:textColorHint="@color/color15"
+            android:queryHint="search your friend or group list"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_marginTop="20dp"
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/groups_members_LinearLTId"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

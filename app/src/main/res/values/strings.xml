@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_names">Project Management App</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_new_projects">NewProjectsActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="role_understanding">Role Understanding</string>
+    <string name="quality_assurance">Quality Assurance</string>
+    <string name="team_value">Team Value</string>
+    <string name="quality_commitment">Quality Commitment</string>
+
+    <string name="doublebackwardnav"> &#xf100;</string>
+    <string name="singlebackwardnav"> &#xf104;</string>
+    <string name="doubleforwardnav"> &#xf101;</string>
+    <string name="circledbacknav"> &#xf359;</string>
+    <string name="singleforwardnav"> &#xf105;</string>
+    <string name="downwardnav"> &#xf063;</string>
+
+    <string name="calendarlogo"> &#xf073;</string>
+    <string name="windowcloselogo"> &#xf057;</string>
+    <string name="globalprojectlogo"> &#xf0ac;</string>
+    <string name="userprojectlogo"> &#xf007;</string>
+    <string name="multiusersprojectlogo"> &#xf0c0;</string>
+    <string name="alarmlogo"> &#xf0f3;</string>
+    <string name="chartlogo"> &#xf080;</string>
+    <string name="addgroupmemeberlogo"> &#xf0c0;</string>
+    <string name="addchatmemeberlogo"> &#xf234;</string>
+    <string name="questionslogo"> &#xf059;</string>
+    <string name="dropdownarrow"> &#xf107;</string>
+    <string name="sortarrow">&#xf338;</string>
+    <string name="switchLogo">&#xf021;</string>
+    <string name="flashlogo">&#xf0eb;</string>
+    <string name="checklogo">&#xf00c;</string>
+    <string name="closebutton">&#xf00d;</string>
+    <string name="closebutton2">&#xf410;</string>
+    <string name="camerabutton">&#xf030;</string>
+    <string name="acceptbutton">&#xf00c;</string>
+    <string name="settingsbutton">&#xf013;</string>
+    <string name="notificationlogo">&#xf0f3;</string>
+    <string name="assignedbutton">&#xf54b;</string>
+    <string name="roundimage">&#xf192;</string>
+    <string name="cameralogo">&#xf030;</string>
+    <string name="notification">&#xf557;</string>
+    <string name="dropdownmenu">&#xf103;</string>
+
+    <string name="title_activity_dedigate_task">DedigateTaskActivity</string> &#xf0f3;
+
+
+    <string name="start_image_capture">Take a New Picture</string>
+    <string name="capture_image">Snap it!</string>
+    <string name="save_image">Save Picture</string>
+    <string name="recapture_image">Retake Picture</string>
+    <string name="capturing_image">Taking New Picture</string>
+    <string name="done">Done</string>
+
+    <string name="facebook_app_id">2148735548730002</string>
+    <string name="app_name">ProjectManagementApp</string>
+    <!-- Message Status -->
+    <string name="message_sending">Sending</string>
+    <string name="message_failed">Failed</string>
+</resources>

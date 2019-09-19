@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color15"
+    android:layout_height="match_parent">
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:orientation="horizontal"
+     android:id="@+id/allNotificationsBckgrndLLT"
+     android:layout_height="120dp">
+<com.github.florent37.shapeofview.shapes.CircleView
+    android:layout_width="80dp"
+    android:layout_marginLeft="5dp"
+    android:layout_height="80dp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/notiRecieverImageVWId"
+        android:src="@drawable/profilelogo"
+        android:layout_height="match_parent" />
+</com.github.florent37.shapeofview.shapes.CircleView>
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_marginTop="15dp"
+         android:layout_marginLeft="15dp"
+         android:orientation="horizontal"
+         android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layoutId"
+        android:layout_alignParentLeft="true"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="#2e3131"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginRight="10dp"
+            android:id="@+id/notiStatusTextVWId"
+            android:text="femiProject" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginTop="3dp"
+            android:textColor="#049372"
+            android:fontFamily="@font/montserrat_bold"
+            android:id="@+id/notidateTextVWId"
+            android:layout_marginRight="10dp"
+
+            android:text="femiProject" />
+    </LinearLayout>
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:orientation="horizontal"
+             android:layout_alignParentRight="true"
+             android:layout_below="@+id/layoutId"
+            android:layout_marginTop="10dp"
+             android:layout_marginBottom="10dp"
+             android:layout_marginRight="30dp"
+             android:layout_height="wrap_content">
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/textStatusTextWVId"
+                 android:textSize="14sp"
+                 android:layout_marginTop="3dp"
+                 android:textColor="@color/color43"
+                 android:fontFamily="@font/montserrat_bold"
+                 android:layout_marginRight="30dp"
+
+                 android:text="" />
+
+             <ImageView
+                 android:layout_width="20dp"
+                 android:tint="@color/color16"
+                 android:clickable="true"
+                 android:focusable="true"
+                 android:id="@+id/navToReviewDetailsId"
+                 android:src="@drawable/notificationinfoview"
+                 android:layout_height="20dp" />
+             <ImageView
+                 android:layout_width="25dp"
+                 android:id="@+id/navToFullDetailsId"
+                 android:tint="@color/color16"
+                 android:clickable="true"
+                 android:focusable="true"
+                 android:layout_marginLeft="10dp"
+                 android:src="@drawable/notificationdetailsview"
+                 android:layout_height="25dp" />
+
+         </LinearLayout>
+     </RelativeLayout>
+ </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/color28"
+        android:layout_height="1dp"/>
+</LinearLayout>

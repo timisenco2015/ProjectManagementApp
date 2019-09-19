@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color15"
+    tools:context=".DelegateProjectToGroupFriendsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:background="@color/color15"
+        android:layout_marginTop="30dp"
+
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:background="@color/color15"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/projectNameTxtViw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pt_sans"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textAlignment="center"
+            android:text="To view your group or friend list, click on any of the label below"
+            android:textColor="@color/color11"
+            android:textSize="15sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/color15"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="3"
+                        android:layout_marginTop="40dp"
+                        android:background="@color/color15"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="5dp"
+                            android:src="@drawable/projectdelegatedottedline"
+                            android:layerType="software" />
+                        <Button
+                            android:layout_height="45dp"
+                            android:id="@+id/createProjectId1"
+                            android:onClick="viewUserGroups"
+                            android:layout_weight="1"
+                            android:layout_width="45dp"
+                            android:textAlignment="center"
+                            android:background="@drawable/curveradiusbackgrnd"
+                            android:textColor="@color/color7"
+                            android:layout_marginLeft="2dp"
+                            android:text="Groups" />
+                        <ImageView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="5dp"
+                            android:src="@drawable/projectdelegatedottedline"
+                            android:layerType="software" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color15"
+                        android:id="@+id/userGroupsLayoutId"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color15"
+                    android:layout_marginTop="80dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="3"
+                        android:background="@color/color15"
+
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="5dp"
+                            android:src="@drawable/projectdelegatedottedline"
+                            android:layerType="software" />
+
+                        <Button
+                            android:layout_height="45dp"
+                            android:onClick="viewUserFriends"
+                            android:layout_weight="1"
+                            android:layout_width="45dp"
+                            android:textAlignment="center"
+                            android:background="@drawable/curveradiusbackgrnd"
+                            android:textColor="@color/color7"
+                            android:layout_marginLeft="2dp"
+                            android:text="Friends" />
+                        <ImageView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="5dp"
+                            android:src="@drawable/projectdelegatedottedline"
+                            android:layerType="software" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color15"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:id="@+id/userFriendsLayoutId"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:id="@+id/userFriendsButtonId"
+                            android:background="@drawable/userfriendbuttonrippleeffect"
+                            android:onClick="getUserFriendsButton"
+                            android:layout_marginTop="15dp"
+                            android:clickable="true"
+                            android:layout_height="wrap_content">
+                            <android.support.v7.widget.AppCompatImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:id="@+id/friendForwardLogo"
+                                android:layout_marginLeft="130dp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/forwardlogo"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_toRightOf="@+id/friendForwardLogo"
+                                android:paddingTop="10dp"
+                                android:textSize="17dp"
+                                android:paddingRight="5dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/color31"
+                                android:src="@drawable/forwardlogo"
+                                android:text="Proceed" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="300dp"
+                android:layout_marginTop="80dp"
+                android:paddingTop="20dp"
+                android:onClick="backToViewProjectActivity"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:outlineProvider="none"
+                android:textStyle="bold"
+                android:background="@drawable/userfriendbuttonrippleeffect"
+                android:textColor="@color/color22"
+                android:text="back" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+

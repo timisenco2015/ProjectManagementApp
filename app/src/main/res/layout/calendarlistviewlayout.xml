@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#f4f4f2"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:background="#f4f4f2"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="280dp"
+               android:layout_centerHorizontal="true"
+                android:elevation="20dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/calendarborder"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:layout_height="210dp">
+
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/alarmId"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/belllogo"
+                        android:layout_alignParentRight="true"
+                        android:textSize="20dp"
+                        android:textColor="@color/color12"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/alarmlogo" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/projectNameViewLLT"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:textStyle="normal"
+                            android:fontFamily="@font/roboto"
+                            android:textSize="15dp"
+                            android:textColor="@color/color12"
+                            android:text="Project Name: " />
+
+
+                        <TextView
+                            android:id="@+id/projectNameTextVWId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="18dp"
+                            android:fontFamily="@font/roboto"
+                            android:textSize="15dp"
+                            android:textColor="@color/color12"
+                            android:text="" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/projectTaskViewLLT"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:textStyle="normal"
+                            android:fontFamily="@font/roboto"
+                            android:textSize="15dp"
+                            android:textColor="@color/color12"
+                            android:text="Task Name: " />
+
+                        <TextView
+                            android:id="@+id/projectTaskNameTextVWId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="218dp"
+                            android:textStyle="normal"
+                            android:fontFamily="@font/roboto"
+                            android:textSize="15dp"
+                            android:textColor="@color/color12"
+                            android:text="" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/startDateViewLLT"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:textStyle="normal"
+                            android:fontFamily="@font/roboto"
+                            android:textSize="15dp"
+                            android:textColor="@color/color12"
+                            android:text="Start Date: " />
+
+
+                        <TextView
+                            android:id="@+id/projectStartDateTextVWId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="18dp"
+                            android:textStyle="normal"
+                            android:fontFamily="@font/roboto"
+                            android:textSize="15dp"
+                            android:textColor="@color/color12"
+                            android:text="" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/endDateViewLLT"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/startDateViewLLT">
+
+                        <TextView
+                            android:id="@+id/dateNameTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:textAlignment="center"
+
+                            android:layout_gravity="center_horizontal"
+                            android:textSize="15dp"
+                            android:textColor="@color/color12"
+                            android:layout_marginTop="10dp"
+                            android:text="End Date: " />
+
+
+                        <TextView
+                            android:id="@+id/projectEndDateTextVWId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="18dp"
+                            android:textStyle="normal"
+                            android:fontFamily="@font/roboto"
+                            android:textSize="15dp"
+                            android:textColor="@color/color12"
+                            android:text="" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/statusViewLLT"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/startDateViewLLT">
+
+                        <TextView
+                            android:id="@+id/statusTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:textStyle="normal"
+                            android:fontFamily="@font/roboto"
+                            android:textSize="15dp"
+                            android:textColor="@color/color12"
+                            android:text="Status: " />
+
+
+                        <ProgressBar
+                            android:id="@+id/progressBar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="70dp"
+                            android:layout_marginLeft="18dp"
+                            android:layout_height="wrap_content"
+                            android:indeterminate="false"
+                            android:max="100"
+                            android:progress="10" />
+
+                        <TextView
+                            android:id="@+id/statusDonePercentageTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:textStyle="normal"
+                            android:fontFamily="@font/roboto"
+                            android:textSize="15dp"
+                            android:textColor="@color/color12"
+                            android:text="100 %  done" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="20dp"
+                        android:id="@+id/timeViewLLT"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/dateViewLLT">
+                        <TextView
+                            android:layout_width="290dp"
+                            android:id="@+id/alarmTextVWId"
+                            android:textSize="14dp"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/lato"
+                            android:textColor="@color/color24"
+                            android:layout_height="wrap_content" />
+
+                        <android.support.v4.widget.Space
+                            android:layout_width="45dp"
+
+                            android:layout_height="wrap_content" />
+<!--
+                        <Button
+                            android:layout_width="50dp"
+                            android:text="Set"
+                            android:textSize="15dp"
+                            android:id="@+id/showTimer"
+                            android:fontFamily="@font/libre_franklin_thin"
+                            android:textColor="@color/color24"
+                            android:background="@drawable/roundborder"
+                            android:layout_height="50dp" />
+-->
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+
+
+</LinearLayout>

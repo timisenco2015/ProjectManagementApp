@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bbackground3"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+    <RelativeLayout
+        android:layout_width="680dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:background="#4AFFFFFF"
+        android:layout_height="900dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color17"
+            android:textSize="80dp"
+            android:id="@+id/appId"
+            android:fontFamily="@font/roboto_regular"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true"
+            android:text="ZiHRoN"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:textColor="@color/color15"
+            android:padding="5dp"
+            android:layout_below="@+id/appId"
+            android:id="@+id/appIdText"
+            android:textSize="30dp"
+            android:fontFamily="@font/roboto_regular"
+            android:textStyle="bold"
+            android:background="@drawable/loginpagelogotextdesign"
+            android:gravity="center"
+            android:layout_marginTop="22dp"
+            android:layout_centerHorizontal="true"
+            android:text="Project Management App"/>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:id="@+id/loginLayout"
+            android:layout_below="@+id/appIdText"
+            android:layout_marginTop="135dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="550dp"
+                android:layout_gravity="center"
+                android:background="@drawable/loginlinearlayoutbackgrnd"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/userNameIImageVW"
+                    android:src="@drawable/usernamelogo"
+                    android:tint="@color/color28"
+                    android:layout_height="40dp" />
+                <EditText
+                    android:layout_width="400dp"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Username"
+                    android:id="@+id/usernameEditextId"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColorHint="@color/color17"
+                    android:background="@drawable/logintextiewbackgrnd"
+                    android:layout_toRightOf="@+id/userNameIImageVW"
+                    android:textSize="25dp"
+                    android:textColor="@color/color16"
+                    android:layout_gravity="center"
+                    android:layout_height="65dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="550dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/loginlinearlayoutbackgrnd"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/passWdImageVW"
+                    android:tint="@color/color28"
+                    android:src="@drawable/passwordlogo"
+                    android:layout_height="40dp" />
+                <EditText
+                    android:layout_width="400dp"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Password"
+                    android:id="@+id/passwordEditextId"
+                    android:textColorHint="@color/color17"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textSize="25dp"
+                    android:textColor="@color/color16"
+                    android:background="@drawable/logintextiewbackgrnd"
+                    android:layout_toRightOf="@+id/passWdImageVW"
+                    android:layout_gravity="center"
+                    android:layout_height="65dp" />
+            </RelativeLayout>
+
+
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="50dp"
+                android:text="Login"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="25dp"
+                android:onClick="loadMainPage"
+                android:background="@drawable/loginbuttonbackgrnd"
+                android:layout_height="70dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/forgotPasswdTV"
+            android:layout_below="@+id/loginLayout"
+            android:textColor="@color/color15"
+            android:textSize="23dp"
+            android:fontFamily="@font/roboto_regular"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:text="Forgot Password"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/userSignUpTV"
+            android:layout_below="@+id/forgotPasswdTV"
+            android:textColor="@color/color15"
+            android:textSize="12dp"
+            android:fontFamily="@font/roboto_regular"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:layout_centerHorizontal="true"
+            android:text="Click here to sign up"/>
+
+
+        <LinearLayout
+            android:layout_width="170dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="55dp"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:layout_below="@+id/forgotPasswdTV"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="35dp"
+                android:scaleType="fitXY"
+                android:layout_height="35dp"/>
+            <!--  android:background="@drawable/facebook" -->
+
+            <android.support.v4.widget.Space
+                android:layout_width="10dp"
+                android:layout_height="0dp" />
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:scaleType="fitXY"
+                />
+            <!--  android:background="@drawable/twitter" -->
+
+            <android.support.v4.widget.Space
+                android:layout_width="10dp"
+                android:layout_height="0dp" />
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:scaleType="fitXY"
+                />
+            <!-- android:background="@drawable/instagram" -->
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="homeLogoBackgrndColor">#5D72D7</color>
+    <color name="homeLogoTextColor">#FFFFFF</color>
+    <color name="textColor">#FFFFFF</color>
+    <color name="textColorBlack">#000000</color>
+    <color name="homeLogoTextBackgrndColor">#000000</color>
+    <color name="appBarBackgrndColor">#ffffff</color>
+    <color name="bottomBarColor">#E0E0E0</color>
+    <color name="searchLayoutColor">#e0e0e0</color>
+    <color name="searchLayoutColor1">#bdbdbd</color>
+    <color name="color1">#f5f5f5</color>
+    <color name="color2">#a1887f</color>
+<color name="color3">#d50000</color>
+    <color name="color4">#5d4037</color>
+    <color name="color5">#757D75</color>
+    <color name="color6">#757575</color>
+    <color name="color7">#6C7A89</color>
+    <color name="color8">#D2D7D3</color>
+    <color name="color9">#EEEEEE</color>
+    <color name="color10">#FFDDDDDD</color>
+    <color name="color11">#000000</color>
+    <color name="color12">#212121</color>
+    <color name="color13">#D24D57</color>
+    <color name="color14">#5D72D7</color>
+    <color name="color15">#FFFFFF</color>
+    <color name="color16">#264348</color>
+    <color name="color17">#36D7B7</color>
+    <color name="color18">#e0e0e0</color>
+    <color name="color19">#fafafa</color>
+    <color name="color20">#E5E4E2</color>
+    <color name="color21">#F5F5F5</color>
+    <color name="color22">#002147</color>
+    <color name="color23">#1A2421</color>
+    <color name="color24">#CC0000</color>
+    <color name="color25">#1A2421</color>
+    <color name="color26">#FBFCFC</color>
+    <color name="color27">#5D6D7E</color>
+    <color name="color28">#ff8a80</color>
+    <color name="color29">#cfd8dc</color>
+<color name ="color30">#264348</color>
+    <color name="color31">#763568</color>
+    <color name="trans">#38FFFFFF</color>
+    <color name="trans1">#0AFFFFFF</color>
+    <color name="trans3">#ADFFFFFF</color>
+    <color name="color32">#D2D7D3</color>
+    <color name="color33">#CA6924</color>
+    <color name="color34">#407A52</color>
+    <color name="color35">#eaf2f8</color>
+    <color name="color36">#fafafa</color>
+    <color name="color37">#eeeeee</color>
+    <color name="color38">#FFFFF0</color>
+    <color name="color39">#273746</color>
+    <color name="color40">#f9f9f9</color>
+    <color name="color43">#9099A2</color>
+    <color name="color41">#f0f0f0</color>
+    <color name="color45">#C38D9E</color>
+    <color name="color46">#D79922</color>
+<color name="color42">#e4f1fe</color>
+
+
+
+    <!-- Group Chat -->
+    <color name="groupChatBubbleMe">#774df2</color>
+    <color name="groupChatTextMe">#ffffff</color>
+    <color name="groupChatBubbleOther">#eef1f6</color>
+    <color name="groupChatTextOther">#000000</color>
+
+    <color name="groupChatReadReceiptMe">#1fcc94</color>
+    <color name="groupChatReadReceiptOther">#00BCD4</color>
+
+    <color name="groupChatAdminBackground">#e0fcff</color>
+    <color name="groupChatAdminText">#39474e</color>
+
+    <color name="groupChatDateText">#ffffff</color>
+    <color name="groupChatDateBackground">#C0C0C0</color>
+
+    <!-- Group Channel List -->
+    <color name="groupChannelUnreadCountBackground">#7d62df</color>
+    <color name="groupChannelUnreadCountText">#ffffff</color>
+
+
+</resources>

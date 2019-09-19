@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#ECEAE0"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:maxHeight="400dp"
+        android:background="#E8D3B6"
+        android:layout_height="320dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_gravity="right"
+            android:tint="#70AB8F"
+            android:elevation="80dp"
+            android:id="@+id/closeMbrAllPrjtTasksImageVWId"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:gravity ="right"
+            android:src="@drawable/closeimage"
+            android:layout_height="60dp" />
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_gravity="right"
+
+            android:elevation="70dp"
+            android:id="@+id/rateMemberImageVWId"
+            android:clickable="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/ratemember"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color7"
+            android:id="@+id/userNameTextVWId"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_alignParentLeft="true"
+            android:textSize="24dp"
+            android:fontFamily="@font/lato"
+            android:elevation="80dp"
+            android:text="Ayobami O Idowu"/>
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@color/color36"
+        android:layout_height="match_parent">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color36"
+    android:id="@+id/projectMemberAllTasksLLTId"
+    android:layout_height="wrap_content">
+
+
+
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

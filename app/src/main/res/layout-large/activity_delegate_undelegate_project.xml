@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DelegateUndelegateProjectActivity">
+    <android.support.design.widget.AppBarLayout
+    android:id="@+id/appBar"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/projectCommentsToolBar"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:titleTextColor="@android:color/white"
+            android:background="#4d5f79">
+
+            <ImageView
+                android:id="@+id/projectTaskBackButton"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:tint="@color/color15"
+                android:gravity="center_vertical"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:onClick="backToViewProject"
+                android:src="@drawable/backarrowlogo" />
+            <android.support.v4.widget.Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/appbarTextView"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:fontFamily="@font/exo_2_bold"
+                android:text="Delegate Project"
+                android:textColor="@color/color15"
+                android:textSize="22sp"
+                />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:orientation="horizontal"
+            android:background="#4d5f79"
+            android:layout_height="60dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:id="@+id/delegateProjectTxtVWId"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/roboto"
+                android:text="Deligate"
+                android:textColor="@color/color13"
+                android:textSize="22sp"/>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/unDelegateProjectTxtVWId"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/roboto"
+                android:text="UnDeligate"
+                android:textColor="@color/color15"
+                android:textSize="22sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+
+
+            <com.github.florent37.shapeofview.shapes.TriangleView
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:id="@+id/delegateProjectTriangleVWId"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_horizontal"
+                android:elevation="4dp"
+                android:backgroundTint="@color/color22"
+                android:background="@color/color22"
+                app:shape_triangle_percentBottom="0.5"
+                app:shape_triangle_percentLeft="0"
+                app:shape_triangle_percentRight="0">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:background="#4d5f79"
+                    android:layout_height="match_parent" />
+            </com.github.florent37.shapeofview.shapes.TriangleView>
+
+            <com.github.florent37.shapeofview.shapes.TriangleView
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:alpha="0"
+                android:id="@+id/unDelegateProjectTriangleVWId"
+                android:layout_marginLeft="35dp"
+                android:layout_gravity="center_horizontal"
+                android:elevation="4dp"
+                android:backgroundTint="@color/color22"
+                app:background="@color/color22"
+                app:shape_triangle_percentBottom="0.5"
+                app:shape_triangle_percentLeft="0"
+                app:shape_triangle_percentRight="0">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:background="#4d5f79"
+                    android:layout_height="match_parent" />
+            </com.github.florent37.shapeofview.shapes.TriangleView>
+        </LinearLayout>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/border2"
+    android:id="@+id/del_undelegate_ProjectLayoutId"
+    android:layout_height="wrap_content">
+
+
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+    android:layout_height="wrap_content">
+    <TableLayout
+        android:divider="@drawable/divider"
+        android:id="@+id/members_Undelegate_SelectedOuterLayoutId"
+        android:layout_width="match_parent"
+        android:stretchColumns="0"
+        android:background="@color/color15"
+    android:layout_height="match_parent">
+        <TableRow
+            android:layout_width="match_parent"
+            android:background="@color/color32"
+            android:paddingTop="10dp"
+            android:layout_height="150dp">
+            <LinearLayout
+                android:layout_width="300dp"
+                android:orientation="horizontal"
+
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Member Name"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/roboto_black"
+                    android:textColor="@color/color23"
+                    android:textSize="22sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="250dp"
+
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:text="Can Create Task"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/color23"
+                    android:fontFamily="@font/roboto_black"
+                    android:textSize="22sp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="250dp"
+
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:text="Can Assign Task"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/color23"
+                    android:fontFamily="@font/roboto_black"
+                    android:textSize="22sp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="250dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:text="Can Deligate Project"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/color23"
+                    android:fontFamily="@font/roboto_black"
+                    android:textSize="22sp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="250dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:text="Can Rate Memeber"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/color23"
+                    android:fontFamily="@font/roboto_black"
+                    android:textSize="22sp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="250dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:text="Is Supervisor"
+                    android:fontFamily="@font/roboto_black"
+                    android:textColor="@color/color23"
+                    android:textSize="22sp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="250dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:layout_height="wrap_content">
+            </LinearLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:divider="@drawable/divider"
+        android:id="@+id/members_Delegate_SelectedOuterLayoutId"
+        android:layout_width="match_parent"
+        android:stretchColumns="0"
+        android:visibility="gone"
+        android:background="@color/color15"
+        android:layout_height="wrap_content"
+       >
+        <TableRow
+            android:layout_width="match_parent"
+            android:background="@color/color32"
+            android:layout_height="180dp"
+          >
+            <LinearLayout
+                android:layout_width="300dp"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="Member Name"
+                    android:fontFamily="@font/roboto_black"
+                    android:textColor="@color/color23"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="170dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:text="Can Create Task"
+                    android:fontFamily="@font/roboto_black"
+                    android:textColor="@color/color23"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="170dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:text="Can Assign Task"
+                    android:fontFamily="@font/roboto_black"
+                    android:textColor="@color/color23"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="170dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:text="Can Deligate Project"
+                    android:fontFamily="@font/roboto_black"
+                    android:textColor="@color/color23"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="170dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:text="Can Rate Memeber"
+                    android:fontFamily="@font/roboto_black"
+                    android:textColor="@color/color23"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="170dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:text="Is Supervisor"
+                    android:fontFamily="@font/roboto_black"
+                    android:textColor="@color/color23"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="170dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:layout_height="wrap_content">
+            </LinearLayout>
+
+
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>
+
+
+    </HorizontalScrollView>
+        </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <Button
+                android:layout_width="180dp"
+                android:layout_height="90dp"
+                android:id="@+id/getSelectedMembersBtnId"
+                android:elevation="120dp"
+                android:onClick="createProjectDelegatedMemebersButton"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="80dp"
+                android:text="Done"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_black"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textColor="#1F2833"
+                android:background="@color/color28"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+</ScrollView>
+
+<include layout="@layout/delegategroupsbottomsheetlayout"/>
+
+</android.support.design.widget.CoordinatorLayout>

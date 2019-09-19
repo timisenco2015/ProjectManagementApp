@@ -1,0 +1,17 @@
+<com.zihron.projectmanagementapp.BubbleLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="12dp"
+    android:padding="8dp"
+    android:id="@+id/popLayoutId"
+    app:bl_arrowDirection="top_center"
+    app:bl_arrowHeight="8dp"
+    app:bl_arrowPosition="16dp"
+    app:bl_arrowWidth="8dp"
+    app:bl_cornersRadius="6dp"
+    app:bl_strokeWidth="1dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+</com.zihron.projectmanagementapp.BubbleLayout>

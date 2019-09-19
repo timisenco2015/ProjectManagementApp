@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color15"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/projectNameTxtViw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pt_sans"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        android:text="To view your group or friend list, click on any of the checkbox below"
+        android:textColor="@color/color11"
+        android:textSize="15sp" />
+<ScrollView
+    android:layout_width="350dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="600dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/friendForwardLogo"
+            android:paddingTop="10dp"
+            android:textSize="17dp"
+            android:paddingRight="5dp"
+            android:textAlignment="center"
+            android:textColor="@color/color23"
+            android:text="Groups" />
+        <CheckBox
+            android:layout_width="30dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="25dp"
+            android:gravity="right"
+            android:scaleX=".5"
+            android:scaleY=".5"
+            android:id="@+id/friendsDisplayCheckBoxId"
+            android:layout_height="30dp" />
+        <android.support.v7.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            android:background="@color/color21"
+            android:id="@+id/friendsSearchViewId">
+
+        </android.support.v7.widget.SearchView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:id="@+id/friendsLayoutId"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/friendForwardLogo"
+                android:paddingTop="10dp"
+                android:textSize="17dp"
+                android:paddingRight="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/color23"
+                android:text="Memebers" />
+            <CheckBox
+                android:layout_width="30dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="25dp"
+                android:scaleX=".5"
+                android:scaleY=".5"
+                android:gravity="right"
+                android:id="@+id/groupsDisplayCheckBoxId"
+                android:layout_height="30dp" />
+            <android.support.v7.widget.SearchView
+                android:layout_width="match_parent"
+                android:id="@+id/membersSearchViewId"
+                android:elevation="5dp"
+                android:background="@color/color21"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.SearchView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:id="@+id/membersLayoutId"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/userfriendbuttonrippleeffect"
+            android:onClick="remove_User_Groups_Friends_from_project_Button"
+            android:layout_marginTop="25dp"
+            android:clickable="true"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/friendForwardLogo"
+                android:layout_marginLeft="130dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/deletelogo"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/friendForwardLogo"
+                android:paddingTop="10dp"
+                android:textSize="17dp"
+                android:paddingRight="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/color31"
+                android:src="@drawable/forwardlogo"
+                android:text="Delete" />
+        </RelativeLayout>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

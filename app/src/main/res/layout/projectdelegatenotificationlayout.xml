@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color15"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:layout_marginTop="10dp"
+    android:paddingBottom="5dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/delegateTxtVwId"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular"
+        android:text=""
+        android:textColor="@color/color7"
+        android:textSize="12sp" />
+
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_marginRight="10dp"
+       android:layout_marginTop="15dp"
+       android:layout_height="wrap_content">
+
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:layout_width="35dp"
+           android:src="@drawable/closeimage"
+           android:tint="@color/color3"
+           android:id="@+id/delegateAcceptId"
+           android:layout_marginLeft="20dp"
+
+           android:layout_alignParentRight="true"
+           android:layout_gravity="center_vertical"
+           android:layout_height="35dp" />
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:layout_width="35dp"
+           android:layout_marginLeft="10dp"
+           android:id="@+id/delegateRejectId"
+           android:layout_toLeftOf="@+id/delegateAcceptId"
+           android:src="@drawable/yesicon"
+           android:tint="@color/color17"
+           android:layout_gravity="center_vertical"
+           android:layout_height="35dp" />
+
+
+   </RelativeLayout>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Please enter reason for not accepting"
+            android:textColor="@color/color12"
+            android:textSize="12sp" />
+        <EditText
+            android:id="@+id/firstNameEditTxtId"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:backgroundTint="@color/color18"
+            android:orientation="horizontal"
+            android:inputType="text"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="80dp"
+                android:background="@color/color30"
+                android:textColor="@color/color15"
+                android:text="Add"
+                android:id="@+id/statusAcceptId"
+                android:layout_height="40dp" />
+            <android.support.v4.widget.Space
+                android:layout_width="30dp"
+
+                android:layout_height="0dp" />
+            <Button
+                android:layout_width="80dp"
+                android:textColor="@color/color15"
+                android:text="Close"
+                android:id="@+id/statusRejectId"
+                android:background="@color/color28"
+                android:layout_height="40dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color15"
+    android:paddingBottom="5dp"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="40dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/profilelogo"
+        android:layout_marginTop="7dp"
+        android:id="@+id/friendProfileCirImgVW"
+        android:layout_height="40dp" />
+    <android.support.v4.widget.Space
+        android:layout_width="20dp"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="170dp"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_height="45dp">
+        <TextView
+            android:id="@+id/fullNameTxtVwId"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/libre_franklin_thin"
+            android:text="First Name"
+            android:textColor="@color/color11"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="5dp" />
+        <TextView
+            android:id="@+id/userNameTxtVwId"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/libre_franklin_thin"
+            android:text="First Name"
+            android:textColor="@color/color11"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <android.support.v4.widget.Space
+        android:layout_width="20dp"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_height="40dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="30dp"
+            android:src="@drawable/addfriend"
+            android:id="@+id/friendAddCirImgVW"
+            android:layout_marginTop="10dp"
+            android:gravity ="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_height="30dp" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity ="center_vertical"
+            android:id="@+id/friendDelCirImgVW"
+            android:src="@drawable/deletefriend"
+            android:layout_gravity="center_vertical"
+            android:layout_height="40dp" />
+    </LinearLayout>
+</LinearLayout>

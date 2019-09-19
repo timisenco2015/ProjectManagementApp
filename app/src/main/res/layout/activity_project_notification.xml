@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/color15"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:theme="@style/AppTheme.AppBarOverlay">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:layout_alignParentLeft="true"
+        android:background="@color/color15"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:title="@string/app_name">
+
+        <ImageView
+            android:id="@+id/projectTaskBackButton"
+            android:layout_width="21dp"
+            android:layout_height="20dp"
+            android:tint="@color/color22"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:src="@drawable/backarrowlogo" />
+
+        <TextView
+            android:id="@+id/appbarTextView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="25dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:fontFamily="@font/exo_2_bold"
+            android:text="Notifications"
+            android:textColor="@color/color22"
+            android:textSize="22sp"
+            />
+
+    </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+<LinearLayout
+android:layout_width="match_parent"
+    android:clickable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="10dp"
+    android:id="@+id/friendRequestLLTId"
+    android:orientation="horizontal"
+    android:paddingTop="10dp"
+android:layout_height="60dp">
+    <ImageView
+
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:src="@drawable/friendrequestnoty" />
+<TextView
+
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+ android:layout_marginTop="10dp"
+    android:layout_marginLeft="20dp"
+    android:fontFamily="@font/libre_franklin_thin"
+    android:text="Friend Requests"
+    android:textColor="@color/color22"
+    android:textSize="19sp"
+    />
+<android.support.v4.widget.Space
+    android:layout_width="10dp"
+    android:layout_height="0dp" />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/friendRequestTxtVWId"
+        android:fontFamily="@font/libre_franklin_thin"
+        android:text="10"
+        android:background="@drawable/notificationbadge"
+        android:textColor="@color/color24"
+        android:textSize="12sp"
+        />
+
+</LinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:background="@drawable/lineborder"
+    android:layout_height="2dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:paddingTop="5dp"
+        android:id="@+id/taskAssignedLLTId"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_marginLeft="10dp"
+        android:layout_height="60dp">
+
+        <ImageView
+
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:src="@drawable/taskassignednotify" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/libre_franklin_thin"
+            android:text="Task Assigned"
+            android:textColor="@color/color22"
+            android:textSize="19sp"
+            />
+
+        <android.support.v4.widget.Space
+            android:layout_width="10dp"
+            android:layout_height="0dp" />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/taskAssignedTxtVWId"
+            android:fontFamily="@font/libre_franklin_thin"
+            android:text="10"
+            android:background="@drawable/notificationbadge"
+            android:textColor="@color/color24"
+            android:textSize="12sp"
+            />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@drawable/lineborder"
+        android:layout_height="2dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:id="@+id/taskStatusLLTId"
+        android:paddingTop="5dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_marginLeft="10dp"
+        android:layout_height="60dp">
+        <ImageView
+
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/projectTaskStatusImageVWId"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:src="@drawable/taskupdatenotify" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/projectTaskStatusImageVWId"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/libre_franklin_thin"
+            android:text="Task Status"
+            android:textColor="@color/color22"
+            android:textSize="19sp"
+            />
+
+        <android.support.v4.widget.Space
+            android:layout_width="10dp"
+            android:layout_height="0dp" />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+            android:id="@+id/taskStatusTxtVWId"
+            android:layout_marginRight="50dp"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/libre_franklin_thin"
+            android:text="10"
+            android:background="@drawable/notificationbadge"
+            android:textColor="@color/color24"
+            android:textSize="12sp"
+            />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@drawable/lineborder"
+        android:layout_height="2dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:paddingTop="5dp"
+        android:id="@+id/projectDelegateLLTId"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_marginLeft="10dp"
+        android:layout_height="60dp">
+
+        <ImageView
+
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:id="@+id/projectDelegateImageVWId"
+            android:src="@drawable/projectstatusnoti" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/projectDelegateImageVWId"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/libre_franklin_thin"
+            android:text="Project Delegate"
+            android:textColor="@color/color22"
+            android:textSize="19sp"
+            />
+
+        <android.support.v4.widget.Space
+            android:layout_width="10dp"
+            android:layout_height="0dp" />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/projectDelegateTxtVWId"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            android:fontFamily="@font/libre_franklin_thin"
+            android:text="10"
+            android:background="@drawable/notificationbadge"
+            android:textColor="@color/color15"
+            android:textSize="15sp"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/projectTaskToolBar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:titleTextColor="@android:color/white"
+        android:background="@color/appBarBackgrndColor">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/appbarTextView"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/exo_2_bold"
+                android:text="New Project Task"
+                android:textColor="@color/color22"
+                android:textSize="22sp"/>
+            <TextView
+
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="15dp"
+                android:tint="@color/color22"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/exo_2_bold"
+                android:textSize="25sp"
+                android:layout_alignParentRight="true"
+                android:text="@string/windowcloselogo"
+                android:id="@+id/closeNewProjectTask" />
+        </RelativeLayout>
+
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <ScrollView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:background="@color/color15"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="10dp"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/projectNameTxtViw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/libre_franklin_thin"
+                    android:text="Project Name"
+                    android:textColor="@color/color11"
+                    android:textSize="15sp" />
+                <EditText
+                    android:id="@+id/plain_text_input"
+                    android:layout_height="40dp"
+                    android:editable="false"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="8dp"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:text="Technical Support"
+                    android:backgroundTint="@color/color18"
+                    android:orientation="horizontal"
+
+                    android:inputType="text"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:id="@+id/projectTaskNameTxtViw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/libre_franklin_thin"
+                    android:textColor="@color/color11"
+                    android:textSize="15sp"
+                    android:text="Task Title"
+                    />
+                <EditText
+
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="10dp"
+
+                    android:padding="5dp"
+                    android:orientation="horizontal"
+                    android:backgroundTint="@color/color18"
+                    android:inputType="text"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/libre_franklin_thin"
+                    android:textColor="@color/color11"
+                    android:text="Project Task Description"
+                    />
+                <EditText
+
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="10dp"
+
+                    android:padding="5dp"
+                    android:orientation="horizontal"
+                    android:backgroundTint="@color/color18"
+                    android:inputType="text"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/libre_franklin_thin"
+                    android:textColor="@color/color11"
+                    android:text="Link To Dept. Objective"
+                    />
+                <EditText
+
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="10dp"
+
+                    android:padding="5dp"
+                    android:orientation="horizontal"
+                    android:backgroundTint="@color/color18"
+                    android:inputType="text"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/libre_franklin_thin"
+                        android:textColor="@color/color11"
+                        android:text="Start Date" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/startDateTxtView"
+                            android:textColor="@color/color23"
+                            android:text="@string/calendarlogo"
+                            android:onClick="startDatePicker"
+                            android:src="@drawable/smalldatelogo"/>
+                        <EditText
+                            android:id="@+id/startDateEditTxt"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="120dp"
+                            android:padding="5dp"
+                            android:orientation="horizontal"
+                            android:backgroundTint="@color/color18"
+                            android:inputType="text"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/libre_franklin_thin"
+                        android:textColor="@color/color11"
+                        android:text="End Date" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/endDateTxtView"
+                            android:textColor="@color/color23"
+                            android:onClick="endDatePicker"
+                            android:text="@string/calendarlogo"/>
+                        <EditText
+                            android:id="@+id/endDateEditTxt"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="120dp"
+                            android:padding="5dp"
+                            android:orientation="horizontal"
+                            android:backgroundTint="@color/color18"
+                            android:inputType="text"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/libre_franklin_thin"
+                    android:textColor="@color/color11"
+                    android:text="Assign Task to Team"
+                    />
+                <Spinner
+
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
+                    style="@style/spinnerDropDownItemStyle"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:orientation="horizontal">
+                <Button
+
+                    android:layout_height="55dp"
+
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:clickable="true"
+
+                    android:textColor="@color/textColor"
+                    android:text="CREATE  PROJECT"
+                    android:background="@drawable/buttonrippleeffect"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+

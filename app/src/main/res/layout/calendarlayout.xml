@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<ScrollView
+    android:layout_width="match_parent"
+    android:scrollbars="none"
+    android:background="@color/color15"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:paddingTop="30dp"
+                android:paddingLeft="20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:text="Start Date Range"/>
+                <android.support.v4.widget.Space
+                    android:layout_width="15dp"
+                    android:layout_height="0dp" />
+                <EditText
+                    android:layout_width="200dp"
+                    android:enabled="false"
+                    android:id="@+id/startDatRangeEditTxtId"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <CalendarView
+            android:layout_width="match_parent"
+                android:id="@+id/startSearchDateId"
+            android:layout_height="300dp"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="30dp"
+            android:paddingLeft="20dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="End Date Range"/>
+            <android.support.v4.widget.Space
+                android:layout_width="15dp"
+                android:layout_height="0dp" />
+            <EditText
+                android:layout_width="200dp"
+                android:enabled="false"
+                android:id="@+id/endDatRangeEditTxtId"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <CalendarView
+            android:layout_width="match_parent"
+            android:id="@+id/endSearchDateId"
+            android:layout_height="300dp"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="30dp"
+            android:paddingBottom="40dp"
+            android:background="@color/color15"
+            android:layout_height="wrap_content">
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:background="@color/color15"
+                android:layout_height="10dp" />
+            <Button
+                android:layout_width="match_parent"
+                android:background="@drawable/appraisalviewcalendarbutton"
+                android:text="Done"
+                android:id="@+id/doneBttonPressId"
+                android:layout_height="60dp"/>
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:background="@color/color15"
+                android:layout_height="10dp" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:background="@color/color15"
+                android:layout_height="40dp" />
+            <Button
+                android:layout_width="match_parent"
+                android:background="@drawable/appraisalviewcalendarbutton"
+
+                android:text="back"
+                android:id="@+id/backBttonPressId"
+                android:layout_height="60dp" />
+        </LinearLayout>
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

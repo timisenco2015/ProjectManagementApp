@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color15"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AssignedProjectTaskToUserActivity">
+
+    <VideoView
+        android:layout_width="match_parent"
+        android:id="@+id/backgroundVideViewId"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_height="match_parent"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:background="#edf4f4f2"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_height="match_parent">
+<ScrollView
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="30dp"
+            android:clickable="true"
+            android:onClick="backViewEachProjectTaskActivity"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/closeimage"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/friendTaskAssignedLLTId"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#24305e"
+            android:id="@+id/labelTextId"
+            android:textStyle="bold"
+            android:layout_marginTop="70dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/oswald_bold"
+            android:layout_below="@+id/companyLogo"
+            android:text="Select  members to assign this task"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/labelTextId"
+            android:id="@+id/selectedFriendHViewOuterRLTId"
+            android:layout_marginTop="40dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/selectedLayout1"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColorBlack"
+                    android:id="@+id/labelMemberSelectedTextId"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="13dp"
+                    android:fontFamily="@font/work_sans_medium"
+                    android:layout_below="@+id/companyLogo"
+                    android:text="Assign Member"/>
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/selectedFriendHViewId"
+                    android:layout_height="140dp">
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:id="@+id/selectedFriendHViewLLTId"
+                        android:layout_height="wrap_content">
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <Button
+                    android:layout_width="180dp"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:text="Assign"
+                    android:id="@+id/selectedFriendssBtnId"
+                    android:paddingTop="15dp"
+                    android:enabled="false"
+                    android:textColor="@color/color15"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:background="#D79922"
+                    android:layout_height="60dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_below="@+id/selectedLayout1"
+                android:id="@+id/outerLayoutSId"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textColorBlack"
+                    android:id="@+id/labelMemberassignedTextId"
+                    android:layout_marginTop="30dp"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="13dp"
+                    android:fontFamily="@font/work_sans_medium"
+                    android:layout_below="@+id/companyLogo"
+                    android:text="Remove Member"/>
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/assignedMembersHViewId"
+                    android:layout_height="140dp">
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:id="@+id/assignedMembersHViewLLTId"
+                        android:layout_height="wrap_content">
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <Button
+                    android:layout_width="180dp"
+                    android:paddingTop="15dp"
+                    android:text="Unassign"
+                    android:id="@+id/removedFriendssBtnId"
+                    android:gravity="right"
+                    android:layout_gravity="right"
+                    android:enabled="false"
+                    android:textColor="@color/color15"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:background="#C38D9E"
+                    android:layout_height="60dp" />
+
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/selectedFriendHViewOuterRLTId"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/color23"
+                android:fontFamily="@font/libre_franklin_thin"
+                android:text="To assign this task to group."
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/switchToGroupTxtVWId"
+                android:textColor="@color/color23"
+                android:layout_marginLeft="5dp"
+                android:clickable="true"
+                android:fontFamily="@font/libre_franklin_thin"
+                android:textColorLink="@color/color23"
+                android:text="Click here"
+                android:textSize="21sp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+<!-- *******************************************************************************************
+   *********************************************************************************************
+   ******************************* End of Members Assign group *********************************
+
+   **********************************************************************************************
+   ***********************************************************************************************
+   -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/groupTaskAssignedLLTId"
+android:layout_height="wrap_content"
+        android:minHeight="500dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#24305e"
+            android:id="@+id/groupLabelTextId"
+            android:textStyle="bold"
+            android:layout_marginTop="70dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/oswald_bold"
+            android:layout_below="@+id/companyLogo"
+            android:text="Select group to assign this task"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/groupLabelTextId"
+            android:id="@+id/selectedGroupHViewOuterRLTId"
+            android:layout_marginTop="40dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/layoutId"
+                android:layout_height="wrap_content">
+                <com.github.florent37.shapeofview.shapes.PolygonView
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/assignedGrpSwitchBtnId"
+                    android:clickable="true"
+                    app:shape_polygon_noOfSides="5"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:background="#4ABDAC"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="#4ABDAC"
+                            android:fontFamily="@font/work_sans_medium"
+                            android:paddingTop="25dp"
+                            android:text="Assign"
+                            android:textAlignment="center"
+                            android:textColor="@color/color15"
+
+                            android:textSize="16sp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="#4ABDAC"
+                            android:fontFamily="@font/work_sans_medium"
+                            android:text="Member"
+                            android:textAlignment="center"
+                            android:textColor="@color/color15"
+
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </com.github.florent37.shapeofview.shapes.PolygonView>
+                <com.github.florent37.shapeofview.shapes.PolygonView
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/unAssignedGrpSwitchBtnId"
+                    android:clickable="true"
+                    app:shape_polygon_noOfSides="5"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:background="#4ABDAC"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color15"
+
+                            android:paddingTop="25dp"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/work_sans_medium"
+
+                            android:text="Remove"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color15"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/work_sans_medium"
+
+                            android:text="Member"/>
+
+                    </LinearLayout>
+
+
+                </com.github.florent37.shapeofview.shapes.PolygonView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_below="@+id/layoutId"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textColorBlack"
+
+                        android:layout_marginTop="10dp"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="13dp"
+                        android:fontFamily="@font/work_sans_medium"
+                        android:layout_below="@+id/companyLogo"
+                        android:text="All Groups"/>
+                    <HorizontalScrollView
+                        android:layout_width="400dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:id="@+id/allGroupsLLTId"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="350dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:background="@color/color4"
+                    android:layout_height="3dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/textColorBlack"
+
+                        android:layout_marginTop="10dp"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="13dp"
+                        android:fontFamily="@font/work_sans_medium"
+                        android:layout_below="@+id/companyLogo"
+                        android:text="All Group Members"/>
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="20dp"
+
+                        android:layout_height="wrap_content">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:id="@+id/allGroupsMembersLLTId"
+                                android:orientation="horizontal"
+                                android:layout_height="wrap_content">
+
+                            </LinearLayout>
+
+
+                    </HorizontalScrollView>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="90dp"
+            android:layout_below="@+id/selectedGroupHViewOuterRLTId"
+
+
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="19sp"
+                android:textColor="@color/color23"
+                android:fontFamily="@font/libre_franklin_thin"
+                android:text="To assign this task to group."
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/switchToFriendTxtVWId"
+                android:textColor="@color/color23"
+                android:layout_marginLeft="5dp"
+                android:clickable="true"
+                android:fontFamily="@font/libre_franklin_thin"
+                android:textColorLink="@color/color23"
+                android:text="Click here"
+                android:textSize="20sp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+</ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

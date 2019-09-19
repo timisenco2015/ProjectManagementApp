@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    tools:context=".GalleryActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="#4d5f79"
+    android:layout_weight=".8"
+    android:layout_height="0dp">
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/backToUserInformatnPageImgVWId"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:layout_height="30dp"
+        android:src="@drawable/backarrowlogo"
+        android:layout_marginLeft="2dp"/>
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.4">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/saveImageAmazonS3Id"
+            android:elevation="40dp"
+            android:clickable="false"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/saveimagetos3objectlogo"
+            android:layout_height="40dp" />
+        <ImageView
+            android:layout_width="match_parent"
+
+            android:id="@+id/imageViewDisplayId"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#4d5f79"
+        android:layout_weight=".8"
+        android:layout_height="0dp">
+        <Button
+            android:layout_width="130dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:text="View Gallery"
+            android:paddingTop="10dp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#4d5f79"
+            android:onClick="addImageFromGallery"
+            android:background="@drawable/gallerybuttonbackgrnd"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+</LinearLayout>

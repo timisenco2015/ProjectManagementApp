@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/color15"
+    android:orientation="vertical"
+    tools:context="com.example.ayoba.projectmanagementapp.CameraPictureActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/layout1"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/swithCameraFocalTxtVWId"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/color6"
+            android:textSize="25sp"
+            android:layout_alignParentLeft="true"
+            android:text="@string/switchLogo"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/setCameralflashTxtVWId"
+            android:textColor="@color/color6"
+            android:textSize="25sp"
+          android:layout_centerInParent="true"
+            android:text="@string/flashlogo"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/closeCameraTxtVWId"
+            android:textColor="@color/color6"
+            android:textSize="25sp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:text="@string/closebutton"
+
+            />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/cameraFrame"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/layout1"
+
+        android:layout_height="500dp"
+         >
+
+
+
+        <SurfaceView
+            android:id="@+id/profilePixPreview"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/swithCameraFocal"
+            android:layout_height="match_parent" />
+
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="10dp"
+        android:layout_height="70dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cameraSnapTxtVWId"
+            android:textColor="@color/color27"
+            android:textSize="45sp"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/camerabutton"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

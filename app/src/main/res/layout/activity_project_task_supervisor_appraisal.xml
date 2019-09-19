@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ProjectTaskSupervisorAppraisalActivity">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:titleTextColor="@android:color/white"
+            android:background="#4d5f79">
+
+            <ImageView
+                android:id="@+id/projectTaskBackButton"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:tint="@color/color15"
+                android:gravity="center_vertical"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:onClick="backToViewEachProjectTask"
+                android:src="@drawable/backarrowlogo" />
+            <android.support.v4.widget.Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/appbarTextView"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="25dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:fontFamily="@font/exo_2_bold"
+                android:text="Supervisor Appraisal"
+                android:textColor="@color/color15"
+                android:textSize="22sp"
+                />
+
+        </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/selfappraisalimg"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:elevation="80dp"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:id="@+id/appraisalLabelTxtVWId"
+            android:textStyle="bold"
+            android:layout_marginTop="130dp"
+            android:layout_marginRight="25dp"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="#4d5F79"
+            android:text="Supervisor Appraisal"
+            />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:background="#f4f4f2"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:font="@font/libre_franklin_thin"
+                    android:textStyle="normal"
+                    android:text="No selection"
+                    android:layout_marginRight="30dp"
+                    android:textColor="@color/color3"
+                    android:textSize="13sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:id="@+id/weekSelectnErrTxtVWId"
+                    android:layout_marginBottom="15dp"
+
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="192dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/color19"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:id="@+id/weekSpinnerLLTId"
+                    android:layout_height="50dp">
+
+                    <Spinner
+                        android:layout_height="45dp"
+                        style="@style/Widget.AppCompat.DropDownItem.Spinner"
+                        android:id="@+id/weekSpinnerId"
+                        android:layout_width="100dp"
+                        />
+                    <ToggleButton
+                        android:id="@+id/togglebutton"
+                        android:layout_width="80dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="50dp"
+                        android:textSize="10sp"
+                        android:background="@color/color8"
+                        android:textOn="Enabled"
+                        android:textOff="Disabled"
+                        android:onClick="onToggleClicked"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@+id/weekSpinnerLLTId"
+                    android:id="@+id/subQuestnALLTId"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/subQuestionA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="left"
+                        android:gravity="left"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textColor="#47AFAF"
+                        android:text="...thoroughly understood the role, its purpose and alignment with the overall objectives, without seeking further clarity"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:font="@font/libre_franklin_thin"
+                        android:textStyle="normal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/color3"
+                        android:textSize="12sp"
+                        android:visibility="gone"
+                        android:id="@+id/subQuestAErrorTextVWId"
+                        android:layout_height="wrap_content" />
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/subQuestnAAnwsId"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:scaleX=".6"
+                            android:scaleY=".6"
+                            android:text="Never"
+                            android:textSize="20sp"
+                            android:textColor="#B94629"
+                            android:id="@+id/subQuestnAAnwsA"
+                            android:layout_height="wrap_content" />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:scaleX=".6"
+                            android:scaleY=".6"
+                            android:textSize="20sp"
+                            android:layout_marginLeft="-9dp"
+                            android:text="Sometimes"
+                            android:textColor="#B94629"
+                            android:id="@+id/subQuestnAAnwsB"
+                            android:layout_height="wrap_content" />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:scaleX=".6"
+                            android:scaleY=".6"
+                            android:textSize="20sp"
+                            android:textColor="#B94629"
+                            android:text="Mostly"
+                            android:id="@+id/subQuestnAAnwsC"
+                            android:layout_height="wrap_content" />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:scaleX=".6"
+                            android:scaleY=".6"
+                            android:textSize="20sp"
+                            android:textColor="#B94629"
+                            android:text="Always"
+                            android:id="@+id/subQuestnAAnwsD"
+                            android:layout_height="wrap_content" />
+                    </RadioGroup>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#4d5f79"
+                            android:clickable="true"
+                            android:onClick="nextToLayoutB"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="35dp"
+                            android:textSize="15dp"
+                            android:layout_alignParentRight="true"
+                            android:fontFamily="@font/roboto_black"
+                            android:text="Next"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@+id/weekSpinnerLLTId"
+                    android:id="@+id/subQuestnBLLTId"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/subQuestionB"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="left"
+                        android:gravity="left"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textColor="#47AFAF"
+                        android:text="...effectively carried out the actions, towards achieving the expected results, without requesting any guidance"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:font="@font/libre_franklin_thin"
+                        android:textStyle="normal"
+                        android:textColor="@color/color3"
+                        android:textSize="12sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:visibility="gone"
+                        android:id="@+id/subQuestBErrorTextVWId"
+                        android:layout_height="wrap_content" />
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/subQuestnBAnwsId"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:scaleX=".6"
+                            android:scaleY=".6"
+                            android:textSize="20sp"
+                            android:text="Never"
+                            android:textColor="#B94629"
+                            android:id="@+id/subQuestnBAnwsA"
+                            android:layout_height="wrap_content" />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:scaleX=".6"
+                            android:scaleY=".6"
+                            android:layout_marginLeft="-9dp"
+                            android:textSize="20sp"
+                            android:text="Sometimes"
+                            android:textColor="#B94629"
+                            android:id="@+id/subQuestnBAnwsB"
+                            android:layout_height="wrap_content" />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:scaleX=".6"
+                            android:scaleY=".6"
+                            android:textSize="20sp"
+                            android:text="Mostly"
+                            android:textColor="#B94629"
+                            android:id="@+id/subQuestnBAnwsC"
+                            android:layout_height="wrap_content" />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:scaleX=".6"
+                            android:scaleY=".6"
+                            android:textSize="20sp"
+                            android:text="Always"
+                            android:textColor="#B94629"
+                            android:id="@+id/subQuestnBAnwsD"
+                            android:layout_height="wrap_content" />
+                    </RadioGroup>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#4d5f79"
+                            android:clickable="true"
+                            android:onClick="prevToLayoutA"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="35dp"
+                            android:textSize="15dp"
+                            android:layout_alignParentLeft="true"
+                            android:fontFamily="@font/roboto_black"
+                            android:text="Prev"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#4d5f79"
+                            android:clickable="true"
+                            android:onClick="nextToLayoutC"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="35dp"
+                            android:textSize="15dp"
+                            android:layout_alignParentRight="true"
+                            android:fontFamily="@font/roboto_black"
+                            android:text="Next"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@+id/weekSpinnerLLTId"
+                    android:id="@+id/subQuestnCLLTId"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/subQuestionC"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="left"
+                        android:gravity="left"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textColor="#47AFAF"
+                        android:text="...effectively carried out the actions, towards achieving the expected results, without requesting any guidance"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:font="@font/libre_franklin_thin"
+                        android:textStyle="normal"
+                        android:textColor="@color/color3"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="12sp"
+                        android:visibility="gone"
+                        android:id="@+id/subQuestCErrorTextVWId"
+                        android:layout_height="wrap_content" />
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/subQuestnCAnwsId"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:scaleX=".6"
+                            android:scaleY=".6"
+                            android:text="Never"
+                            android:textColor="#B94629"
+                            android:textSize="20sp"
+
+                            android:id="@+id/subQuestnCAnwsA"
+                            android:layout_height="wrap_content" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:scaleX=".6"
+                            android:scaleY=".6"
+                            android:layout_marginLeft="-9dp"
+
+                            android:text="Sometimes"
+                            android:textColor="#B94629"
+                            android:textSize="20sp"
+                            android:id="@+id/subQuestnCAnwsB"
+                            android:layout_height="wrap_content" />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:scaleX=".6"
+                            android:scaleY=".6"
+                            android:textSize="20sp"
+                            android:textColor="#B94629"
+                            android:text="Mostly"
+                            android:id="@+id/subQuestnCAnwsC"
+                            android:layout_height="wrap_content" />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:scaleX=".6"
+                            android:scaleY=".6"
+                            android:textSize="20sp"
+                            android:textColor="#B94629"
+                            android:text="Always"
+                            android:id="@+id/subQuestnCAnwsD"
+                            android:layout_height="wrap_content" />
+                    </RadioGroup>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#4d5f79"
+                            android:clickable="true"
+                            android:onClick="prevToLayoutB"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="35dp"
+                            android:textSize="15dp"
+                            android:layout_alignParentLeft="true"
+                            android:fontFamily="@font/roboto_black"
+                            android:text="Prev"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_gravity="right"
+                    android:elevation="120dp"
+                    android:visibility="gone"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="45dp"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:text="Register"
+                    android:id="@+id/appraisalBtnId"
+                    android:onClick="memberSelfAppraisal"
+                    android:background="#4d5f79"
+                    android:layout_height="40dp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

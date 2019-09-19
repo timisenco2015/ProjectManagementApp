@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="350dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:elevation="60dp"
+            android:id="@+id/closeDialogImageVWId"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:tint="@color/color25"
+            android:backgroundTint="@color/color25"
+            android:src="@drawable/closeimage"
+            android:layout_height="30dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+
+
+        android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="@drawable/logobackgoundimage"
+        android:layout_height="220dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/color13"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/oswald_light"
+            android:textSize="15sp"
+            android:text="you will now be logged out of your account"
+            android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:text="Logout"
+        android:id="@+id/logOutAppBtnId"
+        android:onClick="loadMainPage"
+        android:background="@drawable/loginbuttonbackgrnd"
+        android:layout_height="50dp" />
+    </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

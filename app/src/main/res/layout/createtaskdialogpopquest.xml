@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="300dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_centerInParent="true"
+    android:orientation="vertical"
+    android:background="@drawable/border"
+    android:layout_height="230dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/color24"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/questions"
+            android:layout_height="60dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:paddingBottom="20dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Confirm"
+            android:textColor="@color/color23"
+            android:fontFamily="@font/lato"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_height="wrap_content" />
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="8dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Do you want to create task for this project"
+            android:textColor="@color/color5"
+            android:fontFamily="@font/lato"
+            android:id="@+id/questionTextViewId"
+            android:textSize="15dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/color9"></View>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/color15">
+        <Button
+
+            android:layout_width="135dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/color15"
+            android:fontFamily="@font/lato"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:background="@drawable/buttonrippleeffect"
+            android:layout_height="60dp"
+            android:id="@+id/yesTaskCreateQuestId"
+            android:text="Yes">
+
+        </Button>
+        <android.support.v4.widget.Space
+            android:layout_width="10dp"
+            android:layout_height="0dp" />
+        <Button
+
+            android:layout_width="135dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/lato"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:id="@+id/noTaskCreateQuestId"
+            android:textColor="@color/color15"
+            android:background="@drawable/buttonrippleeffect"
+            android:layout_height="60dp"
+            android:text="No">
+
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>
+</RelativeLayout>

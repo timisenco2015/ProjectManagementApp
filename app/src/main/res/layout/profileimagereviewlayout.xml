@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:titleTextColor="@android:color/white"
+        android:background="#4d5f79">
+
+    <ImageView
+
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/profileReviewDialogId"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:tint="@color/color15"
+        android:gravity="center_vertical"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:src="@drawable/backarrowlogo" />
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#4d5f79"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_weight="2"
+        android:layout_height="600dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3"></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+                android:layout_weight="1.4">
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/profileImageReviewId"
+                android:scaleType="fitXY"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3"></LinearLayout>
+    </LinearLayout>
+</LinearLayout>

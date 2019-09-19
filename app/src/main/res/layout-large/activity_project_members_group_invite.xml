@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#f4f4f2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProjectMembersGroupInviteActivity">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/projectTaskToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:titleTextColor="@android:color/white"
+        android:background="#4d5f79">
+
+
+        <ImageView
+            android:id="@+id/projectTaskBackButton"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="10dp"
+            android:tint="@color/color15"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:onClick="backToViewProject"
+            android:src="@drawable/backarrowlogo" />
+
+
+
+        <TextView
+            android:id="@+id/appbarTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="28dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Project Groups  Members"
+            android:textColor="@color/color15"
+            android:textSize="22sp"
+            />
+    </android.support.v7.widget.Toolbar>
+
+</android.support.design.widget.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingBottom="10dp"
+android:background="#2EFFFFFF"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/delProjectGrpLLTImageBtnId"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+
+            android:padding="10dp"
+            android:background="@drawable/roundborder"
+            android:src="@drawable/addbutton"
+            android:scaleType="fitXY"
+            android:elevation="30dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/deleteGroupLayoutId"
+            android:background="@color/color21"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:elevation="40dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/closeDelGrpLLTId"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:textSize="30sp"
+                android:layout_height="wrap_content"
+                android:text="@string/closebutton"
+                android:layout_gravity="top|right"/>
+            <AutoCompleteTextView
+                android:id="@+id/dltGrpAutoCompleteTtVWId"
+                android:layout_width="550dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_marginTop="10dp"
+                android:hint="enter group name.."
+                android:fontFamily="@font/libre_franklin_thin"
+                android:textColor="#4d5f79"
+                android:textColorHint="#2f3a4a"
+                android:backgroundTint="@color/color31"/>
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/projectgroupdeletelogo"
+                android:id="@+id/deleteProjectGrpBtnId"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:orientation="horizontal"
+            android:background="#576b89"
+            android:layout_height="80dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:src="@drawable/groupcreate"
+                        android:scaleType="fitXY"
+                        android:layout_height="60dp" />
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:id="@+id/projectGroupTxtVWId"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/roboto"
+                        android:text="Groups"
+                        android:textColor="@color/color13"
+                        android:textSize="22sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:src="@drawable/addgrpmbr"
+                android:scaleType="fitXY"
+
+                android:layout_height="50dp" />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/projectAddGrpMbrTxtVWId"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/roboto"
+                android:text="Members"
+                android:textColor="@color/color15"
+                android:textSize="22sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+           <ImageView
+               android:layout_width="50dp"
+               android:scaleType="fitXY"
+               android:src="@drawable/rmvgrpmemeber"
+               android:layout_height="50dp" />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/projectRmvGrpMbrTxtVWId"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/roboto"
+                android:text="Members"
+                android:textColor="@color/color15"
+                android:textSize="22sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+
+
+            <com.github.florent37.shapeofview.shapes.TriangleView
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:id="@+id/projectAddGrpTriangleVWId"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center_horizontal"
+                android:elevation="4dp"
+                android:backgroundTint="@color/color22"
+                android:background="@color/color22"
+                app:shape_triangle_percentBottom="0.5"
+                app:shape_triangle_percentLeft="0"
+                app:shape_triangle_percentRight="0">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:background="#6f84a3"
+                    android:layout_height="match_parent" />
+            </com.github.florent37.shapeofview.shapes.TriangleView>
+
+            <com.github.florent37.shapeofview.shapes.TriangleView
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+
+                android:id="@+id/projectAddGrpMbrTriangleVWId"
+                android:layout_marginLeft="60dp"
+                android:layout_gravity="center_horizontal"
+                android:elevation="4dp"
+                android:backgroundTint="@color/color22"
+                app:background="@color/color22"
+                app:shape_triangle_percentBottom="0.5"
+                app:shape_triangle_percentLeft="0"
+                app:shape_triangle_percentRight="0">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:background="#6f84a3"
+                    android:layout_height="match_parent" />
+            </com.github.florent37.shapeofview.shapes.TriangleView>
+            <com.github.florent37.shapeofview.shapes.TriangleView
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+
+                android:id="@+id/projectRmvGrpMbrTriangleVWId"
+                android:layout_marginLeft="80dp"
+                android:layout_gravity="center_horizontal"
+                android:elevation="4dp"
+                android:backgroundTint="@color/color22"
+                app:background="@color/color22"
+                app:shape_triangle_percentBottom="0.5"
+                app:shape_triangle_percentLeft="0"
+                app:shape_triangle_percentRight="0">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:background="#6f84a3"
+                    android:layout_height="match_parent" />
+            </com.github.florent37.shapeofview.shapes.TriangleView>
+        </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/membergroupinvite"
+            android:layout_height="wrap_content">
+<ScrollView
+    android:layout_width="match_parent"
+    android:id="@+id/groupsCreateScrollViewId"
+    android:layout_height="700dp">
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:id="@+id/selectedMemberHViewLLTId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <LinearLayout
+                        android:id="@+id/createEntryLLayoutId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_marginLeft="20dp"
+                                android:src="@drawable/camera" />
+
+                            <EditText
+                                android:id="@+id/groupNameEditTxtId"
+                                android:layout_width="370dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="30dp"
+                                android:backgroundTint="#E63462"
+                                android:inputType="text"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:textColor="#333745"
+                                android:textColorHint="#E63462" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/projectDescrpLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/libre_franklin_thin"
+                            android:text="Enter  the name you want to use for thi group"
+                            android:textColor="@color/color11"
+                            android:textSize="14sp" />
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="120dp">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="30dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="30dp"
+                                    android:paddingTop="20dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:textAlignment="center"
+                                    android:text="Level:"
+                                    android:textColor="@color/color11"
+                                    android:textSize="25sp" />
+                                <Spinner
+                                    android:id="@+id/groupLevelSpinnerId"
+                                    android:layout_height="60dp"
+                                    android:layout_width="180dp"
+
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_marginTop="15dp"
+                                    android:background="@drawable/bg_spinner"
+                                    android:spinnerMode="dropdown" />
+                            </LinearLayout>
+                            <ImageButton
+                                android:id="@+id/newGroupButtonClickId"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_gravity="right"
+                                android:layout_marginLeft="20dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="40dp"
+                                android:layout_marginTop="30dp"
+                                android:background="@drawable/roundborder"
+                                android:elevation="35dp"
+                                android:onClick="createGroup"
+                                android:padding="6dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/saveimagelogo" />
+                        </RelativeLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@color/color4" />
+                    </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:id="@+id/membersListLLTId"
+                            android:layout_width="match_parent"
+                            android:layout_height="470dp"
+                            android:paddingBottom="80dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+</ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:id="@+id/groupsMembersAddLLTId"
+            android:layout_height="750dp">
+<RadioGroup
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginTop="90dp"
+    android:weightSum="1"
+    android:id="@+id/groupAddSwitchRadioGrpId"
+    android:layout_height="wrap_content">
+    <RadioButton
+        android:layout_width="0dp"
+        android:layout_marginLeft="50dp"
+        android:text="Group Created"
+        android:textSize="22sp"
+        android:textColor="#39475a"
+        android:id="@+id/groupCreatedAddRadioBtnId"
+        android:fontFamily="@font/oswald_light"
+        android:layout_weight=".5"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:layout_height="wrap_content" />
+    <RadioButton
+        android:layout_width="0dp"
+        android:textColor="#39475a"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:checked="true"
+        android:id="@+id/groupDefaultAddRadioBtnId"
+        android:text="Default Group"
+        android:textSize="22sp"
+        android:fontFamily="@font/oswald_light"
+        android:layout_weight=".5"
+        android:layout_height="wrap_content" />
+</RadioGroup>
+            <AutoCompleteTextView
+                android:id="@+id/groupMbrsAddAutoCompleteTtVWId"
+                android:layout_width="550dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_marginTop="80dp"
+                android:hint="enter group name.."
+                android:textSize="23sp"
+                android:fontFamily="@font/libre_franklin_thin"
+                android:textColor="#4d5f79"
+                android:textColorHint="#2f3a4a"
+                android:backgroundTint="@color/color31"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_marginTop="80dp"
+                android:scrollbars="none"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/addFriendsToGrpLLTId"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="120dp"
+                    android:clickable="true"
+                    android:id="@+id/addGroupMembersBtnLLTId"
+                    android:layout_height="90dp">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_marginLeft="5dp"
+
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/projectmemberinviteicon"
+                        android:scaleType="fitXY"
+                        android:layout_height="80dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Invite"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/color7"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/roboto_black"
+                        android:textSize="24sp" />
+
+
+                </LinearLayout>
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:id="@+id/groupsMembersRemoveLLTId"
+                android:layout_height="750dp">
+                <RadioGroup
+                    android:layout_width="match_parent"
+
+                    android:layout_marginTop="90dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:id="@+id/groupRemoveSwitchRadioGrpId"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="50dp"
+                        android:textColor="#39475a"
+                        android:scaleX="1.2"
+                        android:scaleY="1.2"
+                        android:id="@+id/groupCreatedRadioBtnId"
+                        android:text="Group Created"
+                        android:textSize="22sp"
+                        android:fontFamily="@font/oswald_light"
+                        android:layout_weight=".5"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:id="@+id/groupDefaultRadioBtnId"
+                        android:textColor="#39475a"
+                        android:text="Default Group"
+                        android:textSize="22sp"
+                        android:scaleX="1.2"
+                        android:checked="true"
+                        android:scaleY="1.2"
+                        android:fontFamily="@font/oswald_light"
+                        android:layout_weight=".5"
+                        android:layout_height="wrap_content" />
+                </RadioGroup>
+                <AutoCompleteTextView
+                    android:id="@+id/groupMbrsRemoveAutoCompleteTtVWId"
+                    android:layout_width="550dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView"
+                    android:layout_marginTop="80dp"
+                    android:hint="enter group name.."
+                    android:fontFamily="@font/libre_franklin_thin"
+                    android:textColor="#4d5f79"
+                    android:textColorHint="#2f3a4a"
+                    android:backgroundTint="@color/color31"/>
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="80dp"
+                    android:scrollbars="none"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/removeFriendsFrmGrpLLTId"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="120dp"
+                    android:clickable="true"
+                    android:id="@+id/removeMembersBtnLLTId"
+                    android:layout_height="90dp">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/projectmemberuninviteicon"
+                        android:scaleType="fitXY"
+                        android:layout_height="80dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Remove"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/color7"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/roboto_black"
+                        android:textSize="24sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

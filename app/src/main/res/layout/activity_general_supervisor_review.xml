@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GeneralSupervisorReview">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/projectCommentsToolBar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:titleTextColor="@android:color/white"
+        android:background="#4d5f79">
+
+        <ImageView
+
+            android:layout_width="21dp"
+            android:layout_height="20dp"
+            android:tint="@color/color15"
+            android:gravity="center_vertical"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:onClick="backToHomeActivity"
+            android:src="@drawable/backarrowlogo" />
+        <android.support.v4.widget.Space
+            android:layout_width="30dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/appbarTextView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="25dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:fontFamily="@font/exo_2_bold"
+            android:text="All Supervisors Report"
+            android:textColor="@color/color15"
+            android:textSize="22sp"
+            />
+
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@+id/projectCommentsToolBar"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/generalLineChartId"
+                android:layout_width="match_parent"
+                android:layout_marginTop="60dp"
+                android:layout_height="400dp" />
+
+
+            <com.github.mikephil.charting.charts.RadarChart
+                android:id="@+id/generalRadarChartId"
+                android:layout_width="350dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="400dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

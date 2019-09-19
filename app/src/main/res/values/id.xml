@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="contentTVId" type="id"/>
+    <item name="contentCreateDateId" type="id"/>
+    <item name="chatLogoId" type="id"/>
+    <item name="memberLogoId" type="id"/>
+    <item name="memberNameLogoId" type="id"/>
+    <item name="memberEmailLogoId" type="id"/>
+    <item name="memberButtonLogoId" type="id"/>
+    <item name="taskAssignedListId" type="id"/>
+    <item name="projectNameTextViewId" type="id"/>
+    <item name="projectTaskDoneTextViewId" type="id"/>
+    <item name="friendsSuggestsImageVWId" type="id"/>
+    <item name="friendsSuggestsDetailsLayoutId" type="id"/>
+    <item name="statusTextViewId" type="id"/>
+
+</resources>

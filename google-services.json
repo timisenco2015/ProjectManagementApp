@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "404157635056",
+    "firebase_url": "https://projectmanagementapp-192808.firebaseio.com",
+    "project_id": "projectmanagementapp-192808",
+    "storage_bucket": "projectmanagementapp-192808.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:404157635056:android:d1848120e099eb89",
+        "android_client_info": {
+          "package_name": "com.example.ayoba.projectmanagementapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "404157635056-gp9ds8rjdgcrokkg6v8969449qhv6irp.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "404157635056-7svg7ouao9laqbhsgq656bovqiuodekg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ayoba.projectmanagementapp",
+            "certificate_hash": "c86f611c2169ded4254dc0d231c30730f3f478f5"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA03SUdDcjiXplnQHMMWQDz2zWat6KKBsQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "404157635056-gp9ds8rjdgcrokkg6v8969449qhv6irp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

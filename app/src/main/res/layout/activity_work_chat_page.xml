@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ZihronChatApp.ZihronWorkChat.WorkChatPageActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#ecf0f1"
+        android:id="@+id/selectionContainerLLTId"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:id="@+id/opencloseSelContainerId"
+            android:background="@drawable/openprojectgroups"
+            android:layout_height="25dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/projectSelectionLLTId"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textSize="18sp"
+                android:textColor="#ff3f34"
+                android:textStyle="normal"
+                android:fontFamily="@font/roboto"
+                android:text="Select Option"
+                android:layout_marginLeft="7dp"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/groupLevelSpinnerId"
+                android:layout_height="40dp"
+                android:layout_width="130dp"
+                android:layout_marginTop="20dp"
+                android:paddingTop="2dp"
+                android:paddingLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="15dp"
+                android:clickable="true"
+                android:background="@drawable/bg_spinner1"
+                android:spinnerMode="dropdown" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="7dp"
+                android:textSize="18sp"
+                android:textColor="#ff3f34"
+                android:textStyle="normal"
+                android:fontFamily="@font/roboto"
+                android:text="All Project"
+                android:layout_height="wrap_content" />
+        <ListView
+            android:layout_width="280dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:dividerHeight="2px"
+            android:headerDividersEnabled="true"
+            android:footerDividersEnabled="true"
+            android:id="@+id/projectSelectionListViewId"
+            android:divider="#f7f1e3"
+            android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+            android:id="@+id/taskSelectionLLTId"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="30dp"
+                android:src="@drawable/backarrowcircle"
+                android:scaleType="fitXY"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="7dp"
+                android:id="@+id/backToProjectTxtVWId"
+                android:layout_height="30dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="7dp"
+            android:textSize="18sp"
+            android:textColor="#ff3f34"
+            android:textStyle="normal"
+            android:fontFamily="@font/roboto"
+            android:text="All Project Tasks"
+            android:layout_height="wrap_content" />
+        <ListView
+            android:layout_width="280dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/taskSelectionListViewId"
+            android:divider="#f7f1e3"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/groupSelectionLLTId"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="30dp"
+                android:src="@drawable/backarrowcircle"
+                android:scaleType="fitXY"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="7dp"
+                android:id="@+id/backToProjectTaskTxtVWId"
+                android:layout_height="30dp" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="7dp"
+                android:textSize="18sp"
+                android:textColor="#ff3f34"
+                android:textStyle="normal"
+                android:fontFamily="@font/roboto"
+                android:text="All Groups"
+                android:layout_height="wrap_content" />
+            <ListView
+                android:layout_width="280dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/groupsSelectionListViewId"
+                android:divider="#f7f1e3"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/chatPageLayoutId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:translationX="200dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/opencloseChatContainerId"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/closegroupchatmember"
+                android:clickable="true"
+                android:scaleType="fitXY" />
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/groupChatMemebrsId"
+                    android:layout_height="wrap_content">
+
+                </RelativeLayout>
+            </HorizontalScrollView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_member_list"
+                android:layout_marginLeft="10dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="280dp"
+        android:orientation="horizontal"
+
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/curveradiusbackgrnd"
+        android:layout_height="40dp">
+    <ImageView
+        android:layout_width="25dp"
+        android:src="@drawable/workchatemoticonicon"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_height="25dp" />
+    <EditText
+        android:layout_width="200dp"
+        android:hint="Enter Chat..."
+        android:layout_height="wrap_content" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="25dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/chatsendicon"
+        android:layout_height="25dp" />
+    </LinearLayout>
+<RelativeLayout
+    android:layout_width="50dp"
+    android:layout_gravity="bottom"
+    android:gravity="bottom"
+    android:layout_marginLeft="10dp"
+    android:layout_height="50dp">
+    <ImageButton
+        android:id="@+id/editProjectFloatingBtnId"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:background="@drawable/roundborder"
+        android:onClick="editProject"
+        android:src="@drawable/editprojectlogo"
+        android:scaleType="fitXY"
+        android:elevation="8dp"/>
+
+
+
+    <ImageButton
+        android:id="@+id/projectGroups_MembersFloatingBtnId"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:onClick="project_groups_members"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:background="@drawable/roundborder"
+        android:src="@drawable/groupicon"
+        android:scaleType="fitXY"
+        android:elevation="8dp"/>
+
+    <ImageButton
+        android:id="@+id/delegateProjectFloatingBtnId"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:onClick="delegateProject"
+        android:background="@drawable/roundborder"
+        android:src="@drawable/delegateprojectlogo"
+        android:scaleType="fitXY"
+        android:elevation="8dp"/>
+
+
+
+    <ImageButton
+        android:id="@+id/fabMainFloatingBtnId"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:background="@drawable/roundborder"
+        android:src="@drawable/addbutton"
+        android:scaleType="fitXY"
+        android:elevation="8dp"/>
+</RelativeLayout>
+</LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

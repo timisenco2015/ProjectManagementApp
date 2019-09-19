@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="300dp"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:background="@color/color15"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="45dp">
+
+        <TextView
+            android:id="@+id/projectTaskNameTxtViw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/libre_franklin_thin"
+            android:text="Full Name: "
+            android:textColor="@color/color11"
+            android:textSize="15sp" />
+        <EditText
+            android:id="@+id/projectNameId"
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:padding="5dp"
+            android:backgroundTint="@color/color18"
+            android:orientation="horizontal"
+
+            android:inputType="text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="45dp">
+
+        <TextView
+            android:id="@+id/emailNameTxtViw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/libre_franklin_thin"
+            android:text="Email: "
+            android:textColor="@color/color11"
+            android:textSize="15sp" />
+        <EditText
+            android:id="@+id/emailEditVWId"
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:padding="5dp"
+            android:backgroundTint="@color/color18"
+            android:orientation="horizontal"
+
+            android:inputType="text"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="90dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:text="Edit"
+        android:clickable="true"
+        android:id="@+id/editProfileBtnId"
+        android:textSize="15sp"
+        android:textColor="@color/color13"
+        android:background="@drawable/edituserbackground"
+        android:layout_height="30dp" />
+</LinearLayout>

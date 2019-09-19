@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SupervisorAppraisalByProjectActivity">
+    <include layout="@layout/appraisalviewbyprojectlayout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/supervisorLineChartId"
+                android:layout_below="@+id/appraisalWeekReview"
+                android:layout_width="match_parent"
+                android:layout_marginTop="60dp"
+                android:layout_height="400dp" />
+
+
+            <com.github.mikephil.charting.charts.RadarChart
+                android:id="@+id/supervisorRadarChartId"
+                android:layout_width="350dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="400dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

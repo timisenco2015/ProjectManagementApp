@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProjectTaskAssignedListActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/projectCommentsToolBar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:titleTextColor="@android:color/white"
+        android:background="#4d5f79">
+
+        <ImageView
+
+            android:layout_width="21dp"
+            android:layout_height="20dp"
+            android:tint="@color/color15"
+            android:gravity="center_vertical"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:onClick="backToProjectTaskAssingedActivity"
+            android:src="@drawable/backarrowlogo" />
+        <android.support.v4.widget.Space
+            android:layout_width="30dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/appbarTextView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="25dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:fontFamily="@font/exo_2_bold"
+            android:text="Project Tasks"
+            android:textColor="@color/color15"
+            android:textSize="22sp"
+            />
+
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="0dp"
+        android:padding="20dp"
+        android:paddingTop="0dp"
+
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/oswald_bold"
+                android:id="@+id/projectNameTxtvwId"
+                android:text="Hardware Installation"
+                android:textColor="@color/color12"
+                android:textSize="18dp"
+                />
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="3dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:id="@+id/projectOwnerNamevwId"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="Ayobami Idowu"
+                android:textColor="@color/color23"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/projectStartDatevwId"
+                    android:textColor="@color/color23"
+                    android:textSize="13dp"
+                    android:fontFamily="@font/lato"
+                    android:text="24-10-2019"/>
+                <android.support.v4.widget.Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/color23"
+                    android:fontFamily="@font/lato"
+
+                    android:textSize="12dp"
+                    android:layout_height="wrap_content"
+                    android:text="Start Date:"/>
+            </LinearLayout>
+            <android.support.v4.widget.Space
+                android:layout_width="23dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color23"
+                    android:fontFamily="@font/lato"
+                    android:textSize="13dp"
+                    android:id="@+id/projectEndDatevwId"
+                    android:text="24-10-2019"/>
+                <android.support.v4.widget.Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:textColor="@color/color23"
+                    android:fontFamily="@font/lato"
+                    android:text="End Date:"/>
+            </LinearLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_width="23dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/projectMemebrsTextVwId"
+                    android:textColor="@color/color23"
+                    android:textSize="13dp"
+                    android:fontFamily="@font/lato"
+                    android:text="10"/>
+                <android.support.v4.widget.Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:textColor="@color/color23"
+                    android:fontFamily="@font/lato"
+                    android:text="Members:"/>
+            </LinearLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_width="23dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color23"
+                    android:textSize="13dp"
+                    android:id="@+id/projectTaskTextVwId"
+                    android:fontFamily="@font/lato"
+                    android:text="10"/>
+                <android.support.v4.widget.Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:textColor="@color/color23"
+                    android:fontFamily="@font/lato"
+                    android:text="Tasks:"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <View
+            android:layout_width="310dp"
+            android:background="@color/color8"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="2dp"/>
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color23"
+                android:textSize="15dp"
+                android:fontFamily="@font/lato"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:text="Project Description" />
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/projectDescripTxtVwId"
+                android:fontFamily="@font/oswald_bold"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:text=""
+                android:textColor="@color/color12"
+                android:textSize="14dp" />
+
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="20dp" />
+
+            <View
+                android:layout_width="310dp"
+                android:background="@color/color8"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="2dp"/>
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color23"
+                android:textSize="15dp"
+                android:fontFamily="@font/lato"
+                android:layout_gravity="left"
+                android:text="Project Status"
+                />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/projectAssignedChartId"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="20dp" />
+
+            <View
+                android:layout_width="310dp"
+                android:background="@color/color8"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="2dp"/>
+
+
+<android.support.v4.widget.Space
+    android:layout_width="0dp"
+    android:layout_height="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color23"
+                android:textSize="15dp"
+                android:fontFamily="@font/lato"
+                android:gravity="center"
+                android:text="Your Assigned Tasks"
+                />
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="20dp" />
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/projectTaskAssignedListContainerId"
+    android:layout_height="wrap_content">
+
+</LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

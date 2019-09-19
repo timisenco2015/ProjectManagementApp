@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zihron.projectmanagementapp">
+
+    <uses-sdk android:minSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_PERMISSION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+    <meta-data
+        android:name="com.onesignal.NotificationOpened.DEFAULT"
+        android:value="DISABLE" />
+
+    <application
+        android:name=".ZihronProjectManagmentApplication"
+        android:allowBackup="true"
+        android:authorities="com.zihron.projectmanagementapp.fileProvider"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_names"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="false"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="adjustResize"
+        tools:replace="android:allowBackup,icon,theme,label">
+        <service
+            android:name=".ZihronProjectManagementAppService"
+            android:exported="false" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <!-- android:host must use the full package name found in Manifest General Attributes -->
+
+            </intent-filter>
+        </activity>
+        <activity android:name=".ViewProjectTaskActivity" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".ViewProjectActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name="ZihronChatApp.ZihronWorkChat.WorkChatPageActivity" />
+        <activity android:name=".ProjectActivity" />
+        <activity android:name=".IndividualAppraisalActivity" />
+        <activity android:name=".SupervisorAppraisalByProjectActivity" />
+        <activity android:name=".NewProjectActivity" />
+        <activity android:name=".NewProjectTaskActivity" />
+        <activity android:name=".ProjectCommentsActivity" />
+        <activity android:name=".ProjectTaskCommentActivity" />
+        <activity android:name=".CameraActivity" />
+        <activity android:name=".GalleryActivity" />
+        <activity android:name=".EditUserInformationActivity" />
+        <activity android:name=".FriendsActivity" />
+        <activity android:name=".EditProjectActivity" />
+        <activity android:name=".ViewEachProjectTaskActivity" />
+        <activity android:name=".EditProjectTaskActivity" />
+        <activity android:name=".ProjectSearchActivity" />
+        <activity android:name=".ProjectTaskSelfAppraisalActivity" />
+        <activity android:name=".SupervisorAppraisalBySupervisor" />
+        <activity android:name=".SupervisorAllAppraiseeReports" />
+        <activity android:name=".UserNotificationsDisplayActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name=".ProjectTaskAssignedListActivity" />
+        <activity android:name=".ProjectEachAssignedTaskReviewActivity" />
+        <activity android:name=".AssignedProjectTaskToUserActivity" />
+        <activity android:name=".DelegateUndelegateProjectActivity" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity android:name=".NewUserActivity" />
+        <activity android:name=".VerifiedUserActivity" />
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"
+            android:enabled="true" />
+        <service android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"
+            android:enabled="true" />
+
+        <activity android:name=".ForgotLoginDetailsActivity" />
+        <activity android:name=".PasswordResetQuestionsActivity" />
+        <activity android:name=".ResetPasswordQuestionConfirmation" />
+        <activity android:name=".GroupActivity" />
+        <activity android:name=".GroupsActivity" />
+        <activity android:name=".AddGroupFriendsActivity" />
+        <activity android:name=".ProjectMembersGroupInviteActivity" />
+        <activity android:name=".ProjectTaskSupervisorAppraisalActivity" />
+        <activity android:name=".GeneralSupervisorReview" />
+        <activity android:name=".ConfirmEmailActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".GroupsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/projectCommentsToolBar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:titleTextColor="@android:color/white"
+        android:background="#4d5f79">
+
+        <ImageView
+            android:layout_width="21dp"
+            android:layout_height="20dp"
+            android:tint="@color/color15"
+            android:gravity="center_vertical"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:src="@drawable/backarrowlogo" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="25dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:fontFamily="@font/exo_2_bold"
+            android:text="All Groups"
+            android:textColor="@color/color15"
+            android:textSize="22sp"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+   <ListView
+       android:layout_width="match_parent"
+       android:id="@+id/allUserGroupsListVWId"
+       android:layout_height="wrap_content"></ListView>
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NotificationViewActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_alignParentLeft="true"
+            android:background="@color/color15"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="@string/app_name">
+
+            <ImageView
+                android:id="@+id/projectTaskBackButton"
+                android:layout_width="28dp"
+                android:layout_height="27dp"
+                android:tint="@color/color22"
+                android:scaleType="fitXY"
+                android:clickable="true"
+                android:onClick="backToProjectNotification"
+                android:adjustViewBounds="true"
+                android:src="@drawable/backarrowlogo" />
+
+            <TextView
+                android:id="@+id/appbarTextView"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="25dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:fontFamily="@font/exo_2_bold"
+                android:text="Notifications"
+                android:textColor="@color/color22"
+                android:textSize="22sp"
+                />
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+   <ListView
+       android:layout_width="match_parent"
+       android:id="@+id/projectDelegateListVWId"
+        android:headerDividersEnabled="true"
+       android:layout_height="match_parent"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/taskStatusListVWId"
+        android:headerDividersEnabled="true"
+        android:layout_height="match_parent"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/friendRequestListVWId"
+        android:visibility="gone"
+        android:layout_height="match_parent"/>
+
+    <ListView
+    android:layout_width="match_parent"
+    android:id="@+id/groupRequestListVWId"
+        android:visibility="gone"
+    android:layout_height="match_parent"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/taskAssignedListVWId"
+        android:headerDividersEnabled="true"
+        android:visibility="gone"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

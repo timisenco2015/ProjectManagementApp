@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#f4f4f2"
+    tools:context=".UserProfileInformationActivity">
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:background="@color/color15"
+      android:layout_height="310dp">
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:layout_width="120dp"
+          android:layout_height="120dp"
+          android:layout_marginTop="150dp"
+          android:elevation="30dp"
+          android:layout_marginLeft="50dp"
+          android:id="@+id/profileImageVWId"
+          android:src="@drawable/background4"  />
+      <com.github.florent37.shapeofview.shapes.DiagonalView
+          android:layout_width="match_parent"
+          android:layout_height="230dp"
+          android:background="#4d5f79"
+          app:shape_diagonal_angle="10"
+          app:shape_diagonal_direction="left"
+          app:shape_diagonal_position="bottom">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#4d5f79"
+    android:layout_height="match_parent">
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_marginTop="40dp"
+              android:layout_marginLeft="20dp"
+              android:orientation="vertical"
+
+              android:layout_below="@+id/profileImageVWId"
+              android:layout_height="wrap_content">
+              <TextView
+                  android:id="@+id/userFullNameTextVWId"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textAlignment="center"
+                  android:fontFamily="@font/lato"
+                  android:text="Ayobami O Idowu"
+                  android:layout_gravity="center_horizontal"
+                  android:textColor="@color/color15"
+                  android:textSize="22sp" />
+
+              <TextView
+                  android:id="@+id/usernameTextVWId"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textAlignment="center"
+                  android:layout_below="@+id/userFullNameTextVWId"
+                  android:layout_gravity="center_horizontal"
+                  android:layout_marginTop="5dp"
+                  android:fontFamily="@font/lato"
+                  android:text="ayobami.o.idowu@gmail.com"
+                  android:textColor="@color/color15"
+                  android:textSize="22sp" />
+          </LinearLayout>
+</LinearLayout>
+      </com.github.florent37.shapeofview.shapes.DiagonalView>
+
+
+
+
+
+
+
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+
+          android:layout_height="230dp">
+          <LinearLayout
+              android:layout_width="100dp"
+              android:elevation="70dp"
+              android:orientation="vertical"
+              android:layout_alignParentRight="true"
+              android:layout_height="100dp">
+              <ImageView
+                  android:layout_width="50dp"
+                  android:layout_gravity="center_horizontal"
+                  android:gravity="center_horizontal"
+                  android:layout_marginTop="20dp"
+                  android:clickable="true"
+                  android:id="@+id/logOutImageVWId"
+                  android:src="@drawable/logouticon"
+                  android:layout_height="50dp" />
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textAlignment="center"
+                  android:fontFamily="@font/lora_bold"
+                  android:text="Log Out"
+                  android:layout_gravity="center_horizontal"
+                  android:textColor="@color/color15"
+                  android:textSize="20sp" />
+          </LinearLayout>
+
+
+
+      </RelativeLayout>
+
+      <com.github.florent37.shapeofview.shapes.CircleView
+          android:layout_width="100dp"
+          android:layout_marginRight="20dp"
+          android:id="@+id/userfriendsLLTId"
+
+          android:layout_alignParentRight="true"
+          android:layout_marginTop="140dp"
+          android:layout_height="100dp">
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:background="#C5CBE3"
+              android:padding="10dp"
+
+              android:orientation="horizontal"
+              android:layout_height="match_parent">
+              <HorizontalScrollView
+                  android:layout_width="wrap_content"
+                  android:id="@+id/layoutHSV"
+android:scrollbars="none"
+                  android:layout_centerHorizontal="true"
+                  android:layout_height="wrap_content">
+                  <TextView
+                      android:id="@+id/allProjectsMembersTxtVWId"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+
+                      android:layout_marginTop="10dp"
+                      android:fontFamily="@font/libre_franklin_thin"
+                      android:text="0"
+                      android:textColor="@color/color15"
+                      android:textSize="18sp" />
+              </HorizontalScrollView>
+              <TextView
+                  android:id="@+id/projectTaskNameTxtView"
+                  android:layout_width="wrap_content"
+                  android:layout_below="@+id/layoutHSV"
+                  android:layout_centerHorizontal="true"
+                  android:layout_height="wrap_content"
+                  android:fontFamily="@font/libre_franklin_thin"
+                  android:text="Friends"
+                  android:textStyle="bold"
+                  android:textColor="@color/color15"
+                  android:textSize="20sp" />
+
+
+          </RelativeLayout>
+      </com.github.florent37.shapeofview.shapes.CircleView>
+
+
+  </RelativeLayout>
+
+
+
+      <Button
+          android:layout_width="140dp"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentBottom="true"
+          android:layout_marginLeft="10dp"
+          android:text="Edit Profile"
+          android:clickable="true"
+          android:id="@+id/editProfileBtnId"
+          android:textSize="15sp"
+          android:textColor="@color/color13"
+          android:background="@drawable/edituserbackground"
+          android:layout_height="60dp" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:paddingLeft="20dp"
+        android:background="@color/color15"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/userCreatedProjectCountTxtVwId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/libre_franklin_thin"
+            android:text="10"
+            android:textColor="@color/color7"
+            android:textSize="18sp" />
+        <android.support.v4.widget.Space
+            android:layout_width="40dp"
+            android:layout_height="0dp" />
+        <TextView
+            android:id="@+id/projectTaskNameTxtViw20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/libre_franklin_thin"
+            android:text="projects was created by"
+            android:textColor="@color/color7"
+            android:textSize="18sp" />
+        <android.support.v4.widget.Space
+            android:layout_width="90dp"
+            android:layout_height="0dp" />
+        <ImageView
+            android:layout_width="40dp"
+            android:src="@drawable/userprojectownedlogo"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:paddingLeft="20dp"
+        android:background="@color/color15"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/projectDelegatedCountTxtVWId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/libre_franklin_thin"
+            android:text="10"
+            android:textColor="@color/color7"
+            android:textSize="18sp" />
+        <android.support.v4.widget.Space
+            android:layout_width="30dp"
+            android:layout_height="0dp" />
+        <TextView
+            android:id="@+id/projectTaskNameTxtViw18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/libre_franklin_thin"
+            android:text="projects was deligated to you"
+            android:textColor="@color/color7"
+            android:textSize="18sp" />
+        <android.support.v4.widget.Space
+            android:layout_width="50dp"
+            android:layout_height="0dp" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/projectassignedlogo"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_marginTop="20dp"
+        android:layout_height="55dp"
+        android:paddingLeft="20dp"
+        android:background="@color/color15"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/userCreatedTaskCountTxtVwId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/libre_franklin_thin"
+            android:text="10"
+            android:textColor="@color/color7"
+            android:textSize="18sp" />
+        <android.support.v4.widget.Space
+            android:layout_width="30dp"
+            android:layout_height="0dp" />
+        <TextView
+            android:id="@+id/projectTaskNameTxtViw26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/libre_franklin_thin"
+            android:text="tasks was assigned to you"
+            android:textColor="@color/color7"
+            android:textSize="18sp" />
+        <android.support.v4.widget.Space
+            android:layout_width="80dp"
+            android:layout_height="0dp" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/userprojecttaskcreatedlogo"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/color15"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/taskAssgndToUserCountTxtVWId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/libre_franklin_thin"
+            android:text="10"
+            android:textColor="@color/color7"
+            android:textSize="18sp" />
+        <android.support.v4.widget.Space
+            android:layout_width="30dp"
+            android:layout_height="0dp" />
+        <TextView
+            android:id="@+id/projectTaskNameTxtViw22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/libre_franklin_thin"
+            android:text="tasks was created by you "
+            android:textColor="@color/color7"
+            android:textSize="18sp" />
+        <android.support.v4.widget.Space
+            android:layout_width="90dp"
+            android:layout_height="0dp" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/projectassignedtoyoulogo"
+            android:layout_height="40dp" />
+
+
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

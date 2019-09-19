@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".IndividualAppraisalActivity">
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="50dp"
+            android:src="@drawable/weeklyappraisal"
+            android:scaleType="fitXY"
+            android:clickable="true"
+            android:onClick="weekViewChange"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_marginLeft="10dp"
+            android:layout_height="50dp" />
+        <ImageView
+            android:layout_width="50dp"
+            android:src="@drawable/monthlyappraisal"
+            android:scaleType="fitXY"
+            android:onClick="monthViewChange"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_marginLeft="30dp"
+            android:layout_height="50dp" />
+        <ImageView
+            android:layout_width="50dp"
+            android:src="@drawable/yearlyappraisal"
+            android:scaleType="fitXY"
+            android:onClick="yearViewChange"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_marginLeft="30dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:elevation="80dp"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:id="@+id/appraisalLabelTxtVWId"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:fontFamily="@font/roboto_black"
+            android:textColor="#4d5F79"
+            android:text="Weekly Report Selected"
+            />
+        <LinearLayout
+            android:layout_width="192dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/color19"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:id="@+id/weekSpinnerLLTId"
+            android:layout_height="50dp">
+
+            <Spinner
+                android:layout_height="45dp"
+                style="@style/Widget.AppCompat.DropDownItem.Spinner"
+                android:id="@+id/individualWeekSpinnerId"
+                android:layout_width="120dp"
+                />
+            <ToggleButton
+                android:id="@+id/individualToggleButtonId"
+                android:layout_width="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="40dp"
+                android:textSize="10sp"
+                android:background="@color/color8"
+                android:textOn="Enabled"
+                android:textOff="Disabled"
+                android:onClick="onToggleClicked"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="420dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/individualLineChartId"
+                android:layout_below="@+id/appraisalWeekReview"
+                android:layout_width="match_parent"
+                android:layout_height="350dp" />
+
+
+            <com.github.mikephil.charting.charts.RadarChart
+                android:id="@+id/individualRadarChartId"
+                android:layout_width="350dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="350dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

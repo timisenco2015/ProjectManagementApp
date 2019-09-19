@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f4f4f2"
+    tools:context=".CalendarActivity">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:background="#f4f4f2"
+        android:id="@+id/projectActivityRefreshId"
+        android:layout_height="wrap_content">
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+           android:background="#f4f4f2"
+           android:layout_marginTop="5dp"
+           android:layout_height="wrap_content">
+
+           <DatePicker
+               android:id="@+id/datePickerId"
+
+               android:layout_gravity="center_horizontal"
+               android:layout_width="wrap_content"
+               android:theme="@style/MyDatePickerStyle"
+               android:layout_height="wrap_content"
+               android:calendarViewShown="false"
+               android:datePickerMode="spinner"/>
+
+           <TextView
+               android:id="@+id/startDatePickedTxtVWId"
+               android:layout_width="200dp"
+               android:layout_height="wrap_content"
+              android:paddingTop="5dp"
+               android:paddingBottom="5dp"
+               android:background="#6D7993"
+android:paddingRight="10dp"
+               android:paddingLeft="10dp"
+               android:layout_gravity="center_horizontal"
+               android:gravity="center_horizontal"
+               android:fontFamily="@font/montserrat"
+               android:text="Date Picked: "
+               android:textColor="@color/color15"
+               android:textSize="17sp"
+               />
+  <LinearLayout
+      android:layout_width="300dp"
+      android:layout_gravity="center_horizontal"
+      android:gravity="center_horizontal"
+      android:orientation="vertical"
+      android:background="#f4f4f2"
+      android:layout_marginTop="10dp"
+      android:id="@+id/alltaskDueLLTId"
+      android:layout_height="wrap_content">
+
+  </LinearLayout>
+
+       </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+
+  </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

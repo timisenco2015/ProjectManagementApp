@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#f4f4f2"
+    android:elevation="220dp"
+    app:behavior_peekHeight="80dp"
+    android:id="@+id/top_sheet"
+    app:layout_behavior="com.zihron.projectmanagementapp.TopSheetBehavior"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#f4f4f2"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:src="@drawable/weeklyappraisal"
+                    android:scaleType="fitXY"
+                    android:clickable="true"
+                    android:onClick="weekViewChange"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="60dp" />
+                <ImageView
+                    android:layout_width="60dp"
+                    android:src="@drawable/monthlyappraisal"
+                    android:scaleType="fitXY"
+                    android:onClick="monthViewChange"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:layout_marginLeft="50dp"
+                    android:layout_height="60dp" />
+                <ImageView
+                    android:layout_width="60dp"
+                    android:src="@drawable/yearlyappraisal"
+                    android:scaleType="fitXY"
+                    android:onClick="yearViewChange"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:layout_marginLeft="50dp"
+                    android:layout_height="60dp" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="25dp"
+                android:paddingBottom="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:elevation="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:id="@+id/appraisalLabelTxtVWId"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:fontFamily="@font/roboto_black"
+                    android:textColor="#4d5F79"
+                    android:text="Weekly Report Selected"
+                    />
+                <LinearLayout
+                    android:layout_width="310dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/color19"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:id="@+id/weekSpinnerLLTId"
+                    android:layout_height="60dp">
+
+                    <Spinner
+                        android:layout_height="55dp"
+                        style="@style/Widget.AppCompat.DropDownItem.Spinner"
+                        android:id="@+id/appraiseesWeekSpinnerId"
+                        android:layout_width="200dp"
+                        />
+                    <ToggleButton
+                        android:id="@+id/apraiseeToggleButtonId"
+                        android:layout_width="120dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="50dp"
+                        android:textSize="13sp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/color8"
+                        android:textOn="Enabled"
+                        android:textOff="Disabled"
+                        android:onClick="onToggleClicked"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:id="@+id/projectSelectTxtVWId"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="#FF4081"
+                        android:text="Appraisee"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="30dp"
+                        android:paddingRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/curveradiusbackgrnd"
+                        android:layout_height="wrap_content">
+                        <Spinner
+                            android:layout_height="55dp"
+                            style="@style/Widget.AppCompat.DropDownItem.Spinner"
+                            android:id="@+id/appraiseeSelectSpinnerId"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:id="@+id/taskSelectTxtVWId"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="#FF4081"
+                        android:text="Project"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="20dp"
+                        android:paddingRight="15dp"
+                        android:background="@drawable/curveradiusbackgrnd"
+                        android:layout_height="wrap_content">
+                        <Spinner
+                            android:layout_height="55dp"
+                            style="@style/Widget.AppCompat.DropDownItem.Spinner"
+                            android:id="@+id/projectSelectSpinnerId"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="#FF4081"
+                        android:text="Task"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="20dp"
+                        android:paddingRight="15dp"
+                        android:background="@drawable/curveradiusbackgrnd"
+                        android:layout_height="wrap_content">
+                        <Spinner
+                            android:layout_height="55dp"
+                            style="@style/Widget.AppCompat.DropDownItem.Spinner"
+                            android:id="@+id/taskSelectSpinnerId"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:clickable="true"
+            android:id="@+id/getAllAppraisalReviewBtnId"
+            android:background="@drawable/roundborder"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="60dp">
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="GO"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textStyle="normal"
+                android:fontFamily="@font/montserrat_bold"
+
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#45A29E"
+        android:layout_marginTop="35dp"
+        android:layout_height="80dp">
+        <ImageView
+            android:id="@+id/navigateToApprActivity"
+            android:layout_width="28dp"
+            android:layout_height="27dp"
+            android:tint="@color/color15"
+            android:onClick="navigateToProjectActivity"
+            android:clickable="true"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="30dp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:src="@drawable/backarrowlogo" />
+        <TextView
+            android:id="@+id/editBackgrndImageTxtVWId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/navigateToApprActivity"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Appraisal Review"
+            android:textColor="@color/color15"
+
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/close_open_topSheetId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/dropdownmenu"
+            android:textColor="@color/color15"
+            android:textSize="35sp" />
+
+    </RelativeLayout>
+</LinearLayout>

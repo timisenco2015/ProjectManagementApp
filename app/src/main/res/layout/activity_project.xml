@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:design="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width = "match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2"
+    android:orientation="vertical"
+    tools:context=".ProjectActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/projectCommentsToolBar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:titleTextColor="@android:color/white"
+        android:background="@drawable/border">
+
+        <ImageView
+
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:tint="@color/color22"
+            android:gravity="center_vertical"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:onClick="backToViewProjectAssingedActivity"
+            android:src="@drawable/backarrowlogo" />
+        <android.support.v4.widget.Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/appbarTextView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="25dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:fontFamily="@font/exo_2_bold"
+            android:text="Project"
+            android:textColor="@color/color22"
+            android:textSize="22sp"
+            />
+
+
+        <ImageView
+
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:clickable="true"
+            android:id="@+id/supervisorReviewImgVWId"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+
+            android:src="@drawable/appraiseeapraisalsreview" />
+
+    </android.support.v7.widget.Toolbar>
+
+  <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+      android:layout_marginTop="40dp"
+        android:id="@+id/projectActivityRefreshId"
+        android:layout_height="wrap_content">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="40dp"
+    android:paddingTop="20dp"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="370dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@color/searchLayoutColor"
+        android:rowOrderPreserved="true"
+        android:useDefaultMargins="true"
+        android:columnOrderPreserved="true">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content">
+            <android.support.v4.widget.Space
+            android:layout_width="10dp"
+            android:layout_height="0dp" />
+
+        <TextView
+
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="4dp"
+            android:tint="@color/color22"
+            android:clickable="true"
+            android:textColor="@color/color22"
+            android:fontFamily="@font/exo_2_bold"
+            android:id="@+id/otherOwnerProjectView"
+            android:textSize="25sp"
+            android:text="@string/multiusersprojectlogo"
+             />
+            <android.support.v4.widget.Space
+                android:layout_width="10dp"
+                android:layout_height="0dp" />
+        <TextView
+            android:layout_toEndOf="@+id/onwnedProjectView"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="8dp"
+            android:clickable="true"
+            android:textColor="@color/color25"
+            android:tint="@color/color25"
+
+            android:fontFamily="@font/exo_2_bold"
+            android:textSize="28sp"
+            android:id="@+id/onwnedProjectView"
+           android:text="@string/userprojectlogo"
+            />
+
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:layout_alignParentRight="true"
+    android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/sortByTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/simpleSearchView"
+            android:layout_marginLeft="2dp"
+
+            android:textSize="15dp"
+
+            android:textColor="@color/color12"
+            android:layout_marginTop="5dp"
+            android:text="Sort By:" />
+
+        <TextView
+            android:id="@+id/sortByDropDownTxtId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/sortByTextView"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:clickable="true"
+            android:textSize="20dp"
+            android:textColor="@color/color12"
+            android:layout_marginTop="10dp"
+            android:text="@string/dropdownarrow" />
+    <android.support.v4.widget.Space
+        android:layout_width="25dp"
+        android:layout_height="0dp" />
+</LinearLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/advanceSearchLLTId"
+        android:background="@color/color5"
+        android:rowOrderPreserved="true"
+        android:layout_gravity="center"
+        android:useDefaultMargins="true"
+        android:columnOrderPreserved="true">
+
+        <TextView
+            android:id="@+id/dateTextView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            android:text="Advanced Search"
+            android:fontFamily=""
+            android:textColor="@color/textColor"
+            android:textSize="18dp" />
+        <TextView
+            android:layout_toEndOf="@+id/dateTextView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/color24"
+            android:textSize="25sp"
+            android:fontFamily="@font/exo_2_bold"
+            android:id="@+id/chartGraphView"
+            android:text="@string/chartlogo"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/sortweekslogo" />
+
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:background="@color/color15"
+    android:layout_height="wrap_content">
+    <RadioGroup
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+       android:padding="10dp"
+        android:orientation="horizontal"
+
+        android:weightSum="1"
+
+        android:id="@+id/projectCountRadioGroupId">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textColor="@color/color6"
+            android:id="@+id/countButton1"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:button="@null"
+            android:background="@android:color/transparent"
+            android:textSize="12dp"
+            android:layout_weight="0.13"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:id="@+id/countButton2"
+            android:textColor="@color/color6"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            android:checked="false"
+            android:button="@null"
+            android:textSize="12dp"
+            android:layout_weight="0.13" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30"
+            android:textColor="@color/color6"
+            android:id="@+id/countButton3"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/transparent"
+            android:checked="false"
+            android:button="@null"
+            android:textSize="12dp"
+            android:layout_weight="0.13" />
+
+        <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="40"
+        android:textColor="@color/color6"
+            android:background="@android:color/transparent"
+        android:id="@+id/countButton4"
+        android:layout_gravity="center_horizontal"
+        android:checked="false"
+        android:button="@null"
+        android:textSize="12dp"
+        android:layout_weight="0.13" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50"
+            android:textColor="@color/color6"
+            android:background="@android:color/transparent"
+            android:id="@+id/countButton5"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:button="@null"
+            android:textSize="12dp"
+            android:layout_weight="0.13" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="60"
+            android:textColor="@color/color6"
+            android:background="@android:color/transparent"
+            android:id="@+id/countButton6"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:button="@null"
+            android:textSize="12dp"
+            android:layout_weight="0.13" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="70"
+            android:textColor="@color/color6"
+            android:background="@android:color/transparent"
+            android:id="@+id/countButton7"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:button="@null"
+            android:textSize="12dp"
+            android:layout_weight="0.13" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="80"
+            android:textColor="@color/color6"
+            android:background="@android:color/transparent"
+            android:id="@+id/countButton8"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:button="@null"
+            android:textSize="12dp"
+            android:layout_weight="0.13" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="90"
+            android:textColor="@color/color6"
+            android:background="@android:color/transparent"
+            android:id="@+id/countButton9"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:button="@null"
+            android:textSize="12dp"
+            android:layout_weight="0.13" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:textColor="@color/color6"
+            android:background="@android:color/transparent"
+            android:id="@+id/countButton10"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:button="@null"
+            android:textSize="12dp"
+            android:layout_weight="0.13" />
+    </RadioGroup>
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowOrderPreserved="true"
+        android:useDefaultMargins="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:columnOrderPreserved="true">
+        <ListView
+            android:id="@+id/projectListView"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+</LinearLayout>
+
+
+</android.support.v4.widget.SwipeRefreshLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

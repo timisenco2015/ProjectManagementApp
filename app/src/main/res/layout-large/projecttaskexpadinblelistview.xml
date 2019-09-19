@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="145dp"
+    android:elevation="40dp"
+    android:background="#ffffff"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="480dp"
+    android:layout_marginTop="10dp"
+    android:padding="5dp"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/projecttaskexpandiblebackgrnd"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/taskContentId"
+        android:layout_height="wrap_content">
+
+           <com.github.florent37.shapeofview.shapes.CircleView
+               android:layout_width="80dp"
+               android:id="@+id/statusCircleId"
+               android:layout_gravity="center_horizontal"
+               android:layout_height="80dp"
+               android:layout_marginTop="5dp"
+               app:shape_circle_borderWidth="2dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="#557A95"
+
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/projectTaskStatusId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="30 %"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/libre_franklin_thin"
+                        android:textColor="@color/color15"
+                        android:textSize="18sp" />
+                </LinearLayout>
+           </com.github.florent37.shapeofview.shapes.CircleView>
+        <LinearLayout
+           android:layout_width="220dp"
+           android:layout_marginLeft="15dp"
+           android:id="@+id/taskDetailsLLT"
+           android:layout_toRightOf="@+id/statusCircleId"
+           android:paddingTop="5dp"
+           android:layout_height="80dp"
+           android:orientation="vertical">
+           <android.support.v4.widget.Space
+               android:layout_width="wrap_content"
+               android:layout_height="5dp" />
+           <TextView
+               android:id="@+id/projectTaskNameId"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/lato"
+               android:text="Task Title"
+               android:textColor="#6D7993"
+               android:textSize="22dp"
+               tools:fontFamily="@font/montserrat_bold" />
+           <android.support.v4.widget.Space
+               android:layout_width="wrap_content"
+               android:layout_height="7dp" />
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_marginTop="5dp"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textColor="#6D7993"
+                   android:textSize="22dp"
+                   android:fontFamily="@font/lato"
+                   android:text="End Date:"/>
+               <android.support.v4.widget.Space
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textColor="#6D7993"
+                   android:id="@+id/endDateTxtvwId"
+                   android:textSize="22dp"
+                   android:fontFamily="@font/lato"
+                   android:text="28/05/2017"/>
+           </LinearLayout>
+
+       </LinearLayout>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:id="@+id/deleteProjectTaskImgVWId"
+            android:tint="@color/color33"
+            android:src="@drawable/delelogo"
+            android:layout_alignParentRight="true"
+            android:layout_height="30dp" />
+
+
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/progressBarId"
+        style="?android:attr/progressBarStyleHorizontal"
+
+        android:progressBackgroundTint="#195d76"
+        android:layout_below="@+id/taskContentId"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:minHeight="8dp"
+        android:indeterminate="false"
+        android:layout_marginTop="10dp"
+        android:max="100"
+        android:scaleY="2"
+        android:progress="0" />
+</RelativeLayout>
+</RelativeLayout>

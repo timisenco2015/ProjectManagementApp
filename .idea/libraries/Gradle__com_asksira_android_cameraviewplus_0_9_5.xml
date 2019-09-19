@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.asksira.android:cameraviewplus-0.9.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/cameraviewplus-0.9.5.aar/dc7581a08cb266a7bd29d29b38a95a68/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/cameraviewplus-0.9.5.aar/dc7581a08cb266a7bd29d29b38a95a68/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.asksira.android/cameraviewplus/0.9.5/337f42f3d364f7ab2c0e6ae56633fb2802c85795/cameraviewplus-0.9.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

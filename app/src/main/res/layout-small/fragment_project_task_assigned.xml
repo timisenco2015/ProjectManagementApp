@@ -1,0 +1,565 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProjectTaskAssignedActivity">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="400dp"
+            android:layout_marginTop="120dp"
+
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/taskListContainerId"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+        </ScrollView>
+<ScrollView
+    android:layout_width="60dp"
+    android:layout_alignParentRight="true"
+    android:orientation="vertical"
+    android:layout_marginTop="150dp"
+    android:layout_centerVertical="true"
+    android:background="@color/trans"
+    android:layout_height="420dp">
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical"
+            android:fontFamily="@font/exo_2_bold"
+            android:background="@color/trans"
+            android:layout_height="wrap_content">
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="15dp" />
+            <TextView
+
+                android:layout_width="28dp"
+                android:layout_height="25dp"
+                android:tint="@color/color22"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:id="@+id/textLabelAll"
+                android:textColor="@color/color22"
+                android:fontFamily="@font/exo_2_bold"
+                android:textSize="20sp"
+                android:text="All"
+                />
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="15dp" />
+
+            <TextView
+
+                android:id="@+id/textLabelA"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:clickable="true"
+                android:fontFamily="@font/pt_sans"
+                android:gravity="center_horizontal"
+                android:text="A"
+                android:textColor="@color/color22"
+                android:textSize="20sp"
+                android:tint="@color/color22" />
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="15dp" />
+
+            <TextView
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:tint="@color/color22"
+                android:clickable="true"
+                android:id="@+id/textLabelB"
+                android:textColor="@color/color22"
+                android:fontFamily="@font/exo_2_bold"
+                android:textSize="20sp"
+                android:text="B"
+                />
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="15dp" />
+
+            <TextView
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:tint="@color/color22"
+                android:clickable="true"
+                android:id="@+id/textLabelC"
+                android:textColor="@color/color22"
+                android:fontFamily="@font/exo_2_bold"
+                android:textSize="20sp"
+                android:text="C"
+                />
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="15dp" />
+
+            <TextView
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:tint="@color/color22"
+                android:clickable="true"
+                android:id="@+id/textLabelD"
+                android:textColor="@color/color22"
+                android:fontFamily="@font/exo_2_bold"
+                android:textSize="20sp"
+                android:text="D"
+                />
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="15dp" />
+
+            <TextView
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:tint="@color/color22"
+                android:clickable="true"
+                android:id="@+id/textLabelE"
+                android:textColor="@color/color22"
+                android:fontFamily="@font/exo_2_bold"
+                android:textSize="20sp"
+                android:text="E"
+                />
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="15dp" />
+
+            <TextView
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:tint="@color/color22"
+                android:clickable="true"
+                android:id="@+id/textLabelF"
+                android:textColor="@color/color22"
+                android:fontFamily="@font/exo_2_bold"
+                android:textSize="20sp"
+                android:text="F"
+                />
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="15dp" />
+
+            <TextView
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:tint="@color/color22"
+                android:clickable="true"
+                android:id="@+id/textLabelG"
+                android:textColor="@color/color22"
+                android:fontFamily="@font/exo_2_bold"
+                android:textSize="20sp"
+                android:text="G"
+                />
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="15dp" />
+
+            <TextView
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:tint="@color/color22"
+                android:clickable="true"
+                android:id="@+id/textLabelH"
+                android:textColor="@color/color22"
+                android:fontFamily="@font/exo_2_bold"
+                android:textSize="20sp"
+                android:text="H"
+                />
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="15dp" />
+
+            <TextView
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:tint="@color/color22"
+                android:clickable="true"
+                android:id="@+id/textLabelI"
+                android:textColor="@color/color22"
+                android:fontFamily="@font/exo_2_bold"
+                android:textSize="20sp"
+                android:text="I"
+                />
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="15dp" />
+
+            <TextView
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:tint="@color/color22"
+                android:clickable="true"
+                android:textColor="@color/color22"
+                android:fontFamily="@font/exo_2_bold"
+                android:textSize="20sp"
+                android:id="@+id/textLabelJ"
+                android:text="J"
+                />
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="15dp" />
+
+            <TextView
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:tint="@color/color22"
+                android:clickable="true"
+                android:id="@+id/textLabelK"
+                android:textColor="@color/color22"
+                android:fontFamily="@font/exo_2_bold"
+                android:textSize="20sp"
+                android:text="K"
+                />
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="15dp" />
+
+            <TextView
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:tint="@color/color22"
+                android:clickable="true"
+                android:id="@+id/textLabelL"
+                android:textColor="@color/color22"
+                android:fontFamily="@font/exo_2_bold"
+                android:textSize="20sp"
+                android:text="L"
+                />
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="15dp" />
+
+            <TextView
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:tint="@color/color22"
+                android:clickable="true"
+                android:id="@+id/textLabelM"
+                android:textColor="@color/color22"
+                android:fontFamily="@font/exo_2_bold"
+                android:textSize="20sp"
+                android:text="M"
+                />
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="15dp" />
+
+            <TextView
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:tint="@color/color22"
+                android:clickable="true"
+                android:id="@+id/textLabelN"
+                android:textColor="@color/color22"
+                android:fontFamily="@font/exo_2_bold"
+                android:textSize="20sp"
+                android:text="N"
+                />
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="15dp" />
+
+            <TextView
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:tint="@color/color22"
+                android:clickable="true"
+                android:id="@+id/textLabelO"
+                android:textColor="@color/color22"
+                android:fontFamily="@font/exo_2_bold"
+                android:textSize="20sp"
+                android:text="O"
+                />
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="15dp" />
+
+            <TextView
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:tint="@color/color22"
+                android:clickable="true"
+                android:id="@+id/textLabelP"
+                android:textColor="@color/color22"
+                android:fontFamily="@font/exo_2_bold"
+                android:textSize="20sp"
+                android:text="P"
+                />
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="15dp" />
+
+            <TextView
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:tint="@color/color22"
+                android:clickable="true"
+                android:id="@+id/textLabelQ"
+                android:textColor="@color/color22"
+                android:fontFamily="@font/exo_2_bold"
+                android:textSize="20sp"
+                android:text="Q"
+                />
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="15dp" />
+
+            <TextView
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:tint="@color/color22"
+                android:clickable="true"
+                android:id="@+id/textLabelR"
+                android:textColor="@color/color22"
+                android:fontFamily="@font/exo_2_bold"
+                android:textSize="20sp"
+                android:text="R"
+                />
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="15dp" />
+
+            <TextView
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:tint="@color/color22"
+                android:clickable="true"
+                android:id="@+id/textLabelS"
+                android:textColor="@color/color22"
+                android:fontFamily="@font/exo_2_bold"
+                android:textSize="20sp"
+                android:text="S"
+                />
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="15dp" />
+
+            <TextView
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:tint="@color/color22"
+                android:clickable="true"
+                android:id="@+id/textLabelT"
+                android:textColor="@color/color22"
+                android:fontFamily="@font/exo_2_bold"
+                android:textSize="20sp"
+                android:text="T"
+                />
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="15dp" />
+
+            <TextView
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:tint="@color/color22"
+                android:clickable="true"
+                android:id="@+id/textLabelU"
+                android:textColor="@color/color22"
+                android:fontFamily="@font/exo_2_bold"
+                android:textSize="20sp"
+                android:text="U"
+                />
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="15dp" />
+
+            <TextView
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:tint="@color/color22"
+                android:clickable="true"
+                android:id="@+id/textLabelV"
+                android:textColor="@color/color22"
+                android:fontFamily="@font/exo_2_bold"
+                android:textSize="20sp"
+                android:text="V"
+                />
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="15dp" />
+
+            <TextView
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:tint="@color/color22"
+                android:clickable="true"
+                android:id="@+id/textLabelW"
+                android:textColor="@color/color22"
+                android:fontFamily="@font/exo_2_bold"
+                android:textSize="20sp"
+                android:text="W"
+                />
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="15dp" />
+
+            <TextView
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:tint="@color/color22"
+                android:clickable="true"
+                android:id="@+id/textLabelX"
+                android:textColor="@color/color22"
+                android:fontFamily="@font/exo_2_bold"
+                android:textSize="20sp"
+                android:text="X"
+                />
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="15dp" />
+
+            <TextView
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:tint="@color/color22"
+                android:clickable="true"
+                android:id="@+id/textLabelY"
+                android:textColor="@color/color22"
+                android:fontFamily="@font/exo_2_bold"
+                android:textSize="20sp"
+                android:text="Y"
+                />
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="15dp" />
+
+            <TextView
+
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:tint="@color/color22"
+                android:id="@+id/textLabelZ"
+                android:clickable="true"
+                android:textColor="@color/color22"
+                android:fontFamily="@font/exo_2_bold"
+                android:textSize="20sp"
+                android:text="Z"
+                />
+        </LinearLayout>
+</ScrollView>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_gravity="left|end|bottom"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/newProjectButtonClick"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="right|end|bottom"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="16dp"
+            android:tint="@color/color34"
+            android:background="@drawable/roundborder"
+            android:src="@drawable/projectaddicon"
+            android:scaleType="fitXY"
+            android:elevation="8dp"/>
+
+        <ImageButton
+            android:id="@+id/viewProjectButtonClick"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="right|end|bottom"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="16dp"
+            android:tint="@color/color39"
+            android:background="@drawable/roundborder"
+            android:src="@drawable/viewprojectdetailslogo"
+            android:scaleType="fitXY"
+            android:elevation="8dp"/>
+
+    </LinearLayout>
+</FrameLayout>

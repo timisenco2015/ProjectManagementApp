@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="500dp"
+        android:background="@color/color15"
+        android:orientation="vertical"
+        android:minWidth="500dp"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/projectTaskToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        app:titleTextColor="@android:color/white">
+
+        <ImageView
+            android:id="@+id/projectDialogCloseBtnId"
+            android:layout_width="21dp"
+            android:layout_height="20dp"
+            android:tint="@color/color22"
+            android:onClick="backToProjectPage"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:src="@drawable/backarrowlogo" />
+
+        <TextView
+            android:id="@+id/appbarTextView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="25dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_black"
+            android:text="Search"
+            android:textColor="@color/color22"
+            android:textSize="22sp"
+            />
+
+    </android.support.v7.widget.Toolbar>
+<ScrollView
+    android:layout_width="530dp"
+    android:scrollbars="none"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="530dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:scaleX=".7"
+                    android:scaleY=".7"
+                    android:id="@+id/keyWordSearchChkBtnId"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#A6ACAF"/>
+
+                <TextView
+                    android:layout_toEndOf="@+id/dateTextView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#2d4159"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Keywords Search" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/keyWordSearchLayoutId"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="12dp" />
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:font="@font/libre_franklin_thin"
+                  android:textStyle="normal"
+                  android:textColor="@color/color3"
+                  android:textSize="12sp"
+                  android:id="@+id/searchErrorTextVWId"
+                  android:layout_height="wrap_content" />
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="8dp" />
+                <SearchView
+                    android:id="@+id/projectNameSearchViewId"
+                    android:layout_width="320dp"
+                    android:focusableInTouchMode="true"
+                    android:focusable="false"
+                    android:backgroundTint="#DA7B93"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_height="wrap_content"
+                    android:iconifiedByDefault="false"
+                    android:queryHint="Search Here"
+                    />
+                <TextView
+
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color5"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/lato"
+                    android:text="Keyword search limited to a 6-month date range" />
+                <Button
+                    android:id="@+id/searchKeyWDBtnId"
+                    android:layout_marginTop="20dp"
+                    android:paddingTop="15dp"
+                    android:fontFamily="@font/roboto_black"
+                    android:layout_gravity="right"
+                    android:textColor="#AAABB8"
+                    android:textSize="14sp"
+                    android:textAlignment="center"
+                    android:text="Search"
+                    android:gravity="right"
+                    android:layout_width="100dp"
+                    android:background="#464866"
+                    android:layout_height="50dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:scaleX=".7"
+                    android:scaleY=".7"
+                    android:id="@+id/projectRangeChkBtnId"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#A6ACAF"/>
+
+
+                <TextView
+                    android:layout_toEndOf="@+id/dateTextView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#022140"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Date Range" />
+
+
+            </LinearLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="8dp" />
+
+
+
+            <LinearLayout
+                android:id="@+id/dateRangeLayoutId"
+                android:layout_width="320dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/projectEndStartDateRangeRadioGroupId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="25dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <RadioButton
+                        android:id="@+id/createdDateRangeButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Created"
+                        android:checked="true"
+                        android:textColor="@color/color6"
+                        android:textSize="12dp" />
+
+                    <RadioButton
+                        android:id="@+id/startedDateRangeButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="0.13"
+                        android:checked="false"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Started"
+                        android:textColor="@color/color6"
+                        android:textSize="12dp" />
+
+                    <RadioButton
+                        android:id="@+id/endedDateRangeButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="0.13"
+                        android:checked="false"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Ended"
+                        android:textColor="@color/color6"
+                        android:textSize="12dp" />
+                </RadioGroup>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:clickable="false"
+                    android:scrollbars="none">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="@color/color15"
+                        android:orientation="horizontal">
+
+
+                        <RadioGroup
+                            android:id="@+id/projectDateInDaysRangeGroupId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+                            android:weightSum="2">
+
+                            <RadioButton
+                                android:id="@+id/rangeDateButton1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginLeft="8dp"
+                                android:layout_weight="0.13"
+                                android:background="@android:color/transparent"
+                                android:button="@null"
+                                android:checked="true"
+                                android:fontFamily="@font/oswald_light"
+                                android:text="1 Week"
+                                android:textColor="@color/color6"
+                                android:textSize="12dp" />
+
+                            <RadioButton
+                                android:id="@+id/rangeDateButton2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginLeft="8dp"
+                                android:layout_weight="0.13"
+                                android:background="@android:color/transparent"
+                                android:button="@null"
+                                android:checked="false"
+                                android:fontFamily="@font/oswald_light"
+                                android:text="2 Weeks"
+                                android:textColor="@color/color6"
+                                android:textSize="12dp" />
+
+                            <RadioButton
+                                android:id="@+id/rangeDateButton3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginLeft="8dp"
+                                android:layout_weight="0.13"
+                                android:background="@android:color/transparent"
+                                android:button="@null"
+                                android:checked="false"
+                                android:fontFamily="@font/oswald_light"
+                                android:text="1 Month"
+                                android:textColor="@color/color6"
+                                android:textSize="12dp" />
+
+                            <RadioButton
+                                android:id="@+id/rangeDateButton4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginLeft="8dp"
+                                android:layout_weight="0.13"
+                                android:background="@android:color/transparent"
+                                android:button="@null"
+                                android:checked="false"
+                                android:fontFamily="@font/oswald_light"
+                                android:text="2 Months"
+                                android:textColor="@color/color6"
+                                android:textSize="12dp" />
+
+                            <RadioButton
+                                android:id="@+id/rangeDateButton5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginLeft="8dp"
+                                android:layout_weight="0.13"
+                                android:background="@android:color/transparent"
+                                android:button="@null"
+                                android:checked="false"
+                                android:fontFamily="@font/oswald_light"
+                                android:text="4 Months"
+                                android:textColor="@color/color6"
+                                android:textSize="12dp" />
+
+                            <RadioButton
+                                android:id="@+id/rangeDateButton6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginLeft="8dp"
+                                android:layout_weight="0.13"
+                                android:background="@android:color/transparent"
+                                android:button="@null"
+                                android:checked="false"
+                                android:fontFamily="@font/oswald_light"
+                                android:text="6 Months"
+                                android:textColor="@color/color6"
+                                android:textSize="12dp" />
+
+                            <RadioButton
+                                android:id="@+id/rangeDateButton7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginLeft="8dp"
+                                android:layout_weight="0.13"
+                                android:background="@android:color/transparent"
+                                android:button="@null"
+                                android:checked="false"
+                                android:fontFamily="@font/oswald_light"
+                                android:text="8 Months"
+                                android:textColor="@color/color6"
+                                android:textSize="12dp" />
+
+                            <RadioButton
+                                android:id="@+id/rangeDateButton8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginLeft="8dp"
+                                android:layout_weight="0.13"
+                                android:background="@android:color/transparent"
+                                android:button="@null"
+                                android:checked="false"
+                                android:fontFamily="@font/oswald_light"
+                                android:text="10 Months"
+                                android:textColor="@color/color6"
+                                android:textSize="12dp" />
+
+
+                        <RadioButton
+                            android:id="@+id/rangeDateButton9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="0.13"
+                            android:background="@android:color/transparent"
+                            android:button="@null"
+                            android:checked="false"
+                            android:fontFamily="@font/oswald_light"
+                            android:text="12 Months"
+                            android:textColor="@color/color6"
+                            android:textSize="12dp" />
+                    </RadioGroup>
+
+
+                    </RelativeLayout>
+                </HorizontalScrollView>
+
+                <Button
+                    android:id="@+id/searchDateRangeBtnId"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="20dp"
+                    android:background="#464866"
+                    android:fontFamily="@font/roboto_black"
+                    android:gravity="right"
+                    android:paddingTop="15dp"
+                    android:text="Search"
+                    android:textAlignment="center"
+                    android:textColor="#AAABB8"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:scaleX=".7"
+                    android:scaleY=".7"
+                    android:id="@+id/projectPeriodChkBtnId"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#A6ACAF"/>
+
+
+                <TextView
+                    android:layout_toEndOf="@+id/dateTextView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#022140"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Date Period " />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/datePeriodLayoutId"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/projectEndStartDatePeriodRadioGroupId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="25dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <RadioButton
+                        android:id="@+id/createdDatePeriodButton"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+
+                        android:fontFamily="@font/montserrat"
+                        android:text="Created"
+                        android:checked="true"
+                        android:textColor="@color/color6"
+                        android:textSize="12dp" />
+
+                    <RadioButton
+                        android:id="@+id/StartedDatePeriodButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="0.13"
+                        android:checked="false"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Started"
+                        android:textColor="@color/color6"
+                        android:textSize="12dp" />
+
+                    <RadioButton
+                        android:id="@+id/endedDatePeriodButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="0.13"
+                        android:checked="false"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Ended"
+                        android:textColor="@color/color6"
+                        android:textSize="12dp" />
+                </RadioGroup>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/color15"
+                    android:layout_marginTop="10dp"
+
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color5"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="32dp"
+                        android:fontFamily="@font/lato"
+                        android:text="From" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="32dp"
+                        android:background="@color/color15"
+                        android:layout_height="wrap_content">
+
+
+                        <CalendarView
+                            android:id="@+id/calendarFromViewId"
+                            android:layout_width="250dp"
+                            android:elevation ="60dp"
+                            android:layout_height="300dp"
+                            android:layout_marginTop="16dp" />
+                        <EditText
+                            android:id="@+id/startDateEditTxtId"
+                            android:layout_height="40dp"
+                            android:layout_width="150dp"
+                            android:enabled="false"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginTop="8dp"
+                            android:padding="5dp"
+                            android:textColor="@color/color24"
+                            android:textColorHint="#DA7B93"
+                            android:gravity="center_horizontal"
+                            android:layout_gravity="center_horizontal"
+                            android:inputType="text"/>
+                    </LinearLayout>
+                </LinearLayout>
+                    <View
+                        android:layout_width="310dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@color/color2"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:background="@color/color15"
+                        android:layout_marginTop="15dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="32dp"
+                            android:textColor="@color/color5"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/lato"
+                            android:text="To:" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:background="@color/color15"
+                            android:layout_marginLeft="32dp"
+                            android:layout_height="wrap_content">
+                            <CalendarView
+                                android:id="@+id/calendarToViewId"
+                                android:layout_width="250dp"
+                                android:layout_height="300dp"
+
+                                android:layout_marginTop="16dp" />
+                            <EditText
+                                android:id="@+id/endDateEditTxtId"
+                                android:layout_height="40dp"
+                                android:layout_width="150dp"
+                                android:enabled="false"
+                                android:textColor="@color/color24"
+                                android:layout_marginRight="15dp"
+                                android:layout_marginTop="8dp"
+                                android:padding="5dp"
+                                android:textColorHint="#DA7B93"
+                                android:gravity="center_horizontal"
+                                android:layout_gravity="center_horizontal"
+                                android:inputType="text"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                        <View
+                            android:layout_width="310dp"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="20dp"
+
+                            android:background="@color/color2"/>
+                <Button
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/searchDatePeriodBtnId"
+                    android:paddingTop="15dp"
+                    android:fontFamily="@font/roboto_black"
+                    android:layout_gravity="right"
+                    android:textColor="#AAABB8"
+                    android:textSize="14sp"
+                    android:enabled="false"
+                    android:textAlignment="center"
+                    android:text="Search"
+                    android:gravity="right"
+                    android:layout_width="100dp"
+                    android:background="#464866"
+                    android:layout_height="50dp" />
+                    </LinearLayout>
+
+            </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
+</LinearLayout>
+</LinearLayout>

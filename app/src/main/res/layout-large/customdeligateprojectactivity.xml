@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background1"
+    tools:context=".DelegateProjectActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/projectTaskToolBar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+
+        android:layout_height="70dp"
+        app:titleTextColor="@android:color/white"
+        android:background="@color/color15">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:background="@color/color15"
+            android:layout_height="60dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/projectNameTV"
+                android:fontFamily="@font/libre_franklin_thin"
+                android:textColor="@color/color11"
+                android:text="Project Name:"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_toRightOf="@+id/projectNameTV"
+                android:id="@+id/projectName"
+                android:fontFamily="@font/libre_franklin_thin"
+                android:textColor="@color/color11"
+                android:text="Technical Service"
+                />
+            <TextView
+
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+
+                android:tint="@color/color22"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/exo_2_bold"
+                android:textSize="20sp"
+                android:layout_alignParentRight="true"
+                android:text="@string/windowcloselogo"
+                android:id="@+id/closeDedigateActivity" />
+
+        </RelativeLayout>
+
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/color15"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:layout_height="55dp">
+            <CheckBox android:id="@+id/checkboxQuest1Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <android.support.v4.widget.Space
+                android:layout_width="10dp"
+                android:layout_height="0dp" />
+            <TextView
+                android:id="@+id/delegateQuestions1Id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="Do you this user to be able to further delegate this project to another user?"
+                android:textColor="@color/color22"
+                android:textSize="13sp"
+                />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/color15"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp">
+            <CheckBox android:id="@+id/checkboxQuest2Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <android.support.v4.widget.Space
+                android:layout_width="10dp"
+                android:layout_height="0dp" />
+            <TextView
+                android:id="@+id/delegateQuestions2Id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="Do you want  this user to be able to assign task you created to team member?"
+                android:textColor="@color/color22"
+                android:textSize="13sp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:background="@color/color15"
+            android:layout_height="55dp">
+            <CheckBox android:id="@+id/checkboxQuest3Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <android.support.v4.widget.Space
+                android:layout_width="10dp"
+                android:layout_height="0dp" />
+
+            <TextView
+                android:id="@+id/delegateQuestions3Id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="Do you this user to be able to rate each member performance on each task you created?"
+                android:textColor="@color/color22"
+                android:textSize="13sp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/color15"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/memberDetailLLT"
+            android:background="@color/color15"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/projectNameLLT"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="160dp"
+
+                android:layout_height="160dp">
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:id="@+id/projectDedigateMBprofileRLT"
+                    android:orientation="vertical"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/outerroundborder"
+                    android:layout_height="150dp" />
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/profilelogo"
+                    android:background="@drawable/roundborder"/>
+            </RelativeLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_height="10dp"
+                android:layout_width="wrap_content"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/memberNameTextView"
+                android:fontFamily="@font/libre_franklin_thin"
+                android:textColor="@color/color11"
+                android:text="Ayobami Idowu" />
+
+        </LinearLayout>
+
+        />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="2dp"
+            android:id="@+id/viewId1"
+            android:layout_below="@+id/memberDetailLLT"
+            android:layout_centerHorizontal="true"
+            android:background="@color/color7"/>
+        <Button
+
+            android:layout_height="45dp"
+            android:layout_below="@+id/viewId1"
+            android:layout_width="170dp"
+            android:id="@+id/projectDelegateBtn"
+            android:textAlignment="center"
+            android:clickable="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/textColor"
+            android:text="Delegate  PROJECT"
+            android:background="@drawable/buttonrippleeffect"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:id="@+id/viewId2"
+            android:layout_below="@+id/projectDeligateBtn"
+            android:layout_centerHorizontal="true"
+            android:background="@color/color7"/>
+
+    </RelativeLayout>
+</LinearLayout>

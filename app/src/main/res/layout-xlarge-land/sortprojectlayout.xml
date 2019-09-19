@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+
+    android:orientation="vertical"
+    android:background="@color/color15"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+        android:id="@+id/projectNameLayoutId"
+        android:focusable="true"
+        android:clickable="true"
+        android:padding="10dp"
+        android:background="?selectableItemBackground"
+    android:layout_height="50dp">
+
+        <RadioButton android:id="@+id/projectName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            />
+        <android.support.v4.widget.Space
+            android:layout_width="8dp"
+            android:layout_height="0dp" />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color5"
+            android:layout_marginLeft="8dp"
+            android:textSize="17sp"
+            android:fontFamily="@font/lato"
+            android:text="Project Name" />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:padding="10dp"
+        android:background="?selectableItemBackground"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_below="@+id/projectNameLayoutId"
+        android:id="@+id/projectCreateDateLayoutId"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+        <RadioButton android:id="@+id/projectCreateDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            />
+        <android.support.v4.widget.Space
+            android:layout_width="8dp"
+            android:layout_height="0dp" />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color5"
+            android:layout_marginLeft="8dp"
+            android:textSize="17sp"
+            android:fontFamily="@font/lato"
+            android:text="Project Create Date" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="?selectableItemBackground"
+        android:layout_below="@+id/projectCreateDateLayoutId"
+        android:focusable="true"
+        android:clickable="true"
+        android:id="@+id/projectStartDateLayoutId"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+        <RadioButton android:id="@+id/projectStartDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            />
+        <android.support.v4.widget.Space
+            android:layout_width="8dp"
+            android:layout_height="0dp" />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color5"
+            android:layout_marginLeft="8dp"
+            android:textSize="17sp"
+            android:fontFamily="@font/lato"
+            android:text="Project Start Date" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="?selectableItemBackground"
+        android:orientation="horizontal"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_below="@+id/projectStartDateLayoutId"
+        android:id="@+id/projectEndDateLayoutId"
+        android:padding="10dp"
+        android:layout_height="50dp">
+        <RadioButton android:id="@+id/projectEndDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            />
+        <android.support.v4.widget.Space
+            android:layout_width="8dp"
+            android:layout_height="0dp" />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color5"
+            android:layout_marginLeft="8dp"
+            android:textSize="17sp"
+            android:fontFamily="@font/lato"
+            android:text="Project End Date" />
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".CameraActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/cameraTakenLayoutId"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/color28"
+        android:layout_height="400dp">
+
+    <com.google.android.cameraview.CameraView
+        android:id="@+id/camera_view"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:keepScreenOn="true"
+        android:adjustViewBounds="true"
+        app:autoFocus="true"
+        app:cameraAspectRatio="4:3"
+        app:facing="back"
+        app:flash="off"
+
+        app:maximumWidth="4000"
+        app:maximumPreviewWidth="1280"
+        app:useHighResPicture="false"
+        app:enableZoom="true"/>
+        <View
+            android:id="@+id/shutter_effect"
+            android:layout_width="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_height="0dp"
+            app:layout_constraintLeft_toLeftOf="@id/camera_view"
+            app:layout_constraintRight_toRightOf="@id/camera_view"
+            app:layout_constraintTop_toTopOf="@id/camera_view"
+            app:layout_constraintBottom_toBottomOf="@id/camera_view"
+            android:alpha="0.8"
+            android:background="@android:color/white"
+            android:visibility="gone"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:id="@+id/switchCameraTxtVwId"
+          android:text="@string/switchLogo"
+          android:clickable="true"
+          android:textSize="25sp"
+          android:layout_marginLeft="10dp"
+          android:textColor="@color/color15"
+          android:layout_marginBottom="10dp"
+          android:layout_alignParentBottom="true"
+          android:layout_height="wrap_content"
+         />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/flashCameraTxtVwId"
+            android:text="@string/flashlogo"
+            android:textSize="25sp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/color15"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            />
+    </RelativeLayout>
+    <Button
+        android:layout_width="100dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:onClick="takePicture"
+        android:background="@drawable/cameraroundborder"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="100dp" />
+
+</LinearLayout>
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_gravity="left"
+        android:id="@+id/backToUserInformatnPageImgVWId"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:tint="@color/color7"
+        android:layout_height="30dp"
+        android:src="@drawable/backarrowlogo"
+        android:layout_marginLeft="2dp"/>
+</LinearLayout>

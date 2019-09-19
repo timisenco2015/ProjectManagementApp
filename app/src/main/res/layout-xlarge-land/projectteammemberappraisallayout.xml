@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    android:orientation="vertical"
+    tools:context=".AppraisalActivity">
+
+    <TextView
+
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="15dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="25dp"
+        android:textSize="28sp"
+        android:tint="@color/color22"
+        android:text="@string/windowcloselogo"
+        android:id="@+id/closeprojectTeamAppraisal" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/closeprojectTeamAppraisal"
+        android:layout_marginTop="20dp"
+        android:id="@+id/apprasalLayoutPageA"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/taskOwnerLLTPgA"
+
+        android:paddingRight="5dp"
+
+        android:paddingLeft="5dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/taskOwnerTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:fontFamily="@font/exo_2_bold"
+            android:text="Weekly Appraisal"
+            android:textColor="@color/color24"
+            android:textSize="17sp"
+            />
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <TextView
+            android:id="@+id/taskOwnerApprTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:fontFamily="@font/exo_2_bold"
+            android:text="Appraisal... 1/4"
+            android:textColor="@color/color24"
+            android:textSize="17sp"
+            />
+    </LinearLayout>
+
+        <TextView
+            android:layout_below="@+id/taskOwnerLLTPgA"
+            android:layout_width="wrap_content"
+            android:id="@+id/appraisalWeekTVPgA"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/lato"
+            android:text="Week 1"
+            android:textStyle="bold"
+            android:textColor="@color/color23"
+            android:textSize="15sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            android:padding="20dp"
+            android:id="@+id/appraisalQuestTextViewPgA"
+            android:layout_below="@+id/appraisalWeekTVPgA"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/taskOwnerTextView1PgA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="How often where you convinced during this period of the job/project that Rotimi Alade..."
+                android:textColor="@color/color12"
+                android:textSize="17sp"
+                android:alpha="0"
+                />
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+            <TextView
+                android:id="@+id/taskOwnerApprTextView2PgA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:alpha="0"
+                android:text="...throughly understood the role and its alignment with the overall objective without seeking further clarity?"
+                android:textColor="@color/color12"
+                android:textSize="17sp"
+                />
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/appraisalAnsBtnPgA"
+            android:layout_below="@+id/appraisalQuestTextViewPgA">
+            <TableRow
+                android:id="@+id/rowPgA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/ansBtn1PgA"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/appraisalbuttonpressed"
+                    android:layout_weight="1"
+                    android:text="Never"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/ansBtn2PgA"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_weight="1"
+                    android:text="Rarely"
+                    android:textAlignment="center"
+                    android:background="@drawable/appraisalbuttonpressed"
+
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/ansBtn3PgA"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_weight="1"
+                    android:text="Sometimes"
+                    android:textAlignment="center"
+                    android:background="@drawable/appraisalbuttonpressed"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/ansBtn4PgA"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_weight="1"
+                    android:text="Moslty"
+                    android:textColor="#000"
+                    android:textAlignment="center"
+                    android:background="@drawable/appraisalbuttonpressed"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/ansBtn5PgA"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_weight="1"
+                    android:text="Always"
+                    android:textAlignment="center"
+                    android:background="@drawable/appraisalbuttonpressed"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/appraisalAnsBtnPgA"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/nextQuestBtnPgA"
+                android:layout_height="30dp"
+                android:layout_width="40dp"
+                android:text="Next"
+                android:background="@drawable/appraisalnavbutton"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:visibility="invisible"
+        android:layout_below="@+id/closeprojectTeamAppraisal"
+        android:layout_marginTop="20dp"
+        android:id="@+id/apprasalLayoutPageB"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/taskOwnerLLTPgB"
+            android:paddingRight="5dp"
+
+            android:paddingLeft="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/taskOwnerTextViewPgB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:fontFamily="@font/exo_2_bold"
+                android:text="Weekly Appraisal"
+                android:textColor="@color/color24"
+                android:textSize="17sp"
+                />
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+            <TextView
+                android:id="@+id/taskOwnerApprTextViewPgB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:fontFamily="@font/exo_2_bold"
+                android:text="Appraisal... 2/4"
+                android:textColor="@color/color24"
+                android:textSize="17sp"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_below="@+id/taskOwnerLLTPgB"
+            android:layout_width="wrap_content"
+            android:id="@+id/appraisalWeekTVPgB"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/lato"
+            android:text="Week 1"
+            android:textColor="@color/color23"
+            android:textSize="15sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            android:padding="20dp"
+            android:id="@+id/appraisalQuestTextViewPgB"
+            android:layout_below="@+id/appraisalWeekTVPgB"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/taskOwnerTextView1PgB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="How often where you convinced during this period of the job/project that Rotimi Alade..."
+                android:textColor="@color/color23"
+                android:alpha="0"
+                android:textSize="17sp"
+                />
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+            <TextView
+                android:id="@+id/taskOwnerApprTextView2PgB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:alpha="0"
+                android:text="...constantly sought to meet/exceed the timelines without needing continous reminders?"
+                android:textColor="@color/color23"
+                android:textSize="17sp"
+                />
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/appraisalAnsBtnPgB"
+            android:layout_below="@+id/appraisalQuestTextViewPgB">
+            <TableRow
+                android:id="@+id/rowPgB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/ansBtn1PgB"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:background="@drawable/appraisalbuttonpressed"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="Never"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/ansBtn2PgB"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="Rarely"
+                    android:background="@drawable/appraisalbuttonpressed"
+
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/ansBtn3PgB"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="Sometimes"
+                    android:background="@drawable/appraisalbuttonpressed"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/ansBtn4PgB"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="Moslty"
+                    android:textColor="#000"
+                    android:background="@drawable/appraisalbuttonpressed"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/ansBtn5PgB"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_weight="1"
+                    android:text="Always"
+                    android:textAlignment="center"
+                    android:background="@drawable/appraisalbuttonpressed"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+        </TableLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_below="@+id/appraisalAnsBtnPgB"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/prevQuestBtnPgB"
+                android:layout_height="30dp"
+                android:layout_width="70dp"
+                android:layout_alignParentLeft="true"
+                android:text="Previous"
+                android:background="@drawable/appraisalnavbutton"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/nextQuestBtnPgB"
+                android:layout_height="30dp"
+                android:layout_width="40dp"
+                android:layout_alignParentRight="true"
+                android:text="Next"
+                android:background="@drawable/appraisalnavbutton"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        android:layout_below="@+id/closeprojectTeamAppraisal"
+        android:layout_marginTop="20dp"
+        android:id="@+id/apprasalLayoutPageC"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/taskOwnerLLTPgC"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/taskOwnerTextViewPgC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:fontFamily="@font/exo_2_bold"
+                android:text="Weekly Appraisal"
+                android:textColor="@color/color24"
+                android:textSize="17sp"
+                />
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+            <TextView
+                android:id="@+id/taskOwnerApprTextViewPgC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:fontFamily="@font/exo_2_bold"
+                android:text="Appraisal... 3/4"
+                android:textColor="@color/color24"
+                android:textSize="17sp"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_below="@+id/taskOwnerLLTPgC"
+            android:layout_width="wrap_content"
+            android:id="@+id/appraisalWeekTVPgC"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/lato"
+            android:text="Week 1"
+            android:textColor="@color/color23"
+            android:textSize="15sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            android:padding="20dp"
+            android:id="@+id/appraisalQuestTextViewPgC"
+            android:layout_below="@+id/appraisalWeekTVPgC"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/taskOwnerTextView1PgC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:alpha="0"
+                android:text="How often where you convinced during this period of the job/project that Rotimi Alade..."
+                android:textColor="@color/color23"
+                android:textSize="17sp"
+                />
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+            <TextView
+                android:id="@+id/taskOwnerApprTextView2PgC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:alpha="0"
+                android:text="...fully met/exceed the quality outputs and taking the actions expected without needling much or any guidance?"
+                android:textColor="@color/color23"
+                android:textSize="17sp"
+                />
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:id="@+id/appraisalAnsBtnPgC"
+            android:layout_below="@+id/appraisalQuestTextViewPgC">
+            <TableRow
+                android:id="@+id/rowPgC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/ansBtn1PgC"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:background="@drawable/appraisalbuttonpressed"
+                    android:layout_weight="1"
+                    android:text="Never"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/ansBtn2PgC"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_weight="1"
+                    android:text="Rarely"
+                    android:background="@drawable/appraisalbuttonpressed"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/ansBtn3PgC"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_weight="1"
+                    android:text="Sometimes"
+                    android:background="@drawable/appraisalbuttonpressed"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/ansBtn4PgC"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_weight="1"
+                    android:text="Moslty"
+                    android:textColor="#000"
+                    android:textAlignment="center"
+                    android:background="@drawable/appraisalbuttonpressed"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/ansBtn5PgC"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_weight="1"
+                    android:text="Always"
+                    android:textAlignment="center"
+                    android:background="@drawable/appraisalbuttonpressed"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+        </TableLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_below="@+id/appraisalAnsBtnPgC"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/prevQuestBtnPgC"
+                android:layout_height="30dp"
+                android:layout_width="70dp"
+                android:layout_alignParentLeft="true"
+                android:text="Previous"
+                android:background="@drawable/appraisalnavbutton"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/nextQuestBtnPgC"
+                android:layout_height="30dp"
+                android:layout_width="40dp"
+                android:layout_alignParentRight="true"
+                android:text="Next"
+                android:background="@drawable/appraisalnavbutton"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/closeprojectTeamAppraisal"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        android:id="@+id/apprasalLayoutPageD"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/taskOwnerLLTPgD"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/taskOwnerTextViewPgD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:fontFamily="@font/exo_2_bold"
+                android:text="Weekly Appraisal"
+                android:textColor="@color/color24"
+                android:textSize="17sp"
+                />
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+            <TextView
+                android:id="@+id/taskOwnerApprTextViewPgD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:fontFamily="@font/exo_2_bold"
+                android:text="Appraisal... 4/4"
+                android:textColor="@color/color24"
+                android:textSize="17sp"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_below="@+id/taskOwnerLLTPgD"
+            android:layout_width="wrap_content"
+            android:id="@+id/appraisalWeekTVPgD"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/lato"
+            android:text="Week 1"
+            android:textColor="@color/color23"
+            android:textSize="15sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            android:padding="20dp"
+            android:id="@+id/appraisalQuestTextViewPgD"
+            android:layout_below="@+id/appraisalWeekTVPgD"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/taskOwnerTextView1PgD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:alpha="0"
+                android:text="How often where you convinced during this period of the job/project that Rotimi Alade..."
+                android:textColor="@color/color23"
+                android:textSize="17sp"
+                />
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+            <TextView
+                android:id="@+id/taskOwnerApprTextView2PgD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:alpha="0"
+                android:text="...totally demonstrated work effort and professional attitude that was valued and would always be sought out in future?"
+                android:textColor="@color/color23"
+                android:textSize="17sp"
+                />
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/appraisalAnsBtnPgD"
+            android:layout_below="@+id/appraisalQuestTextViewPgD">
+            <TableRow
+                android:id="@+id/rowPgD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/ansBtn1PgD"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:background="@drawable/appraisalbuttonpressed"
+                    android:layout_weight="1"
+                    android:text="Never"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/ansBtn2PgD"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_weight="1"
+                    android:text="Rarely"
+                    android:background="@drawable/appraisalbuttonpressed"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/ansBtn3PgD"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_weight="1"
+                    android:text="Sometimes"
+                    android:background="@drawable/appraisalbuttonpressed"
+                    android:textColor="#000"
+                    android:textAlignment="center"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/ansBtn4PgD"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_weight="1"
+                    android:text="Moslty"
+                    android:textColor="#000"
+                    android:textAlignment="center"
+                    android:background="@drawable/appraisalbuttonpressed"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/ansBtn5PgD"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_weight="1"
+                    android:text="Always"
+                    android:background="@drawable/appraisalbuttonpressed"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+            </TableRow>
+        </TableLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="80dp"
+            android:layout_below="@+id/appraisalAnsBtnPgD"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/prevQuestBtnPgD"
+                android:layout_height="30dp"
+                android:layout_width="70dp"
+                android:layout_alignParentLeft="true"
+                android:text="Previous"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/appraisalnavbutton"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
